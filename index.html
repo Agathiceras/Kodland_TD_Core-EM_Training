@@ -626,6 +626,31 @@ input[type=range]{width:100%;accent-color:var(--pink)}
 .riskpart{background:var(--ink);color:#fff;border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
 .riskhint{background:#FEF2F2;border:2px solid #FECACA;color:#8A1C1C;border-radius:999px;padding:6px 14px;font-size:13.5px}
 
+
+/* ---------- Module 0 (mindset) ---------- */
+.zh{font-weight:800;font-size:18px;margin:30px 0 10px;color:var(--ink)}
+.zl{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;max-width:840px}
+.zl li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:11px 16px;line-height:1.6;font-size:15.5px;color:var(--ink2)}
+.zl li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-size:13px;font-weight:800;margin-top:1px}
+.zl.num{counter-reset:z}
+.zl.num li::before{counter-increment:z;content:counter(z)}
+.mentors{display:grid;gap:8px;max-width:840px;margin:6px 0 4px}
+.mentors .mh{display:grid;grid-template-columns:minmax(130px,.5fr) 1fr;gap:12px;padding:0 16px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mentors .mr{display:grid;grid-template-columns:minmax(130px,.5fr) 1fr;gap:12px;align-items:center;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:13px 16px;line-height:1.5;color:var(--ink2)}
+.mentors .mreg{color:var(--lime-dd);font-weight:800}
+.tell{display:grid;gap:10px;max-width:900px;margin:6px 0 4px}
+.tell .th,.tell .tr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tell .th span{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0 4px}
+.tell .tr>div{border-radius:16px;padding:13px 16px;line-height:1.55;font-size:15px}
+.tell .t1{background:var(--surface);border:2px solid var(--line);color:var(--ink2)}
+.tell .t2{background:#F2FCE0;border:2px solid var(--line2);color:#2F4A00}
+.tell .tq,.tell .ta{font-weight:800;color:var(--lime-dd);margin-inline-end:6px}
+.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0 0 14px}
+.voice{margin:0;background:var(--surface);border:2px solid var(--line);border-radius:18px;padding:14px 16px}
+.voice img{max-width:100%;border-radius:10px;margin-bottom:10px}
+.voice blockquote{margin:0;line-height:1.6;font-size:15px;color:var(--ink2)}
+.voice figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+@media (max-width:640px){.tell .th{display:none}.tell .tr,.mentors .mh,.mentors .mr{grid-template-columns:1fr}.mentors .mh{display:none}}
 </style>
 </head>
 <body>
@@ -704,6 +729,7 @@ function setFlag(k, v){ P.flags = P.flags || {}; P.flags[k] = v; saveP(); }
    ========================================================= */
 const MODULES = CONTENT.modules;
 const TOTAL = MODULES.length;
+const NUMBERED = MODULES.filter(x => x.n > 0).length;   // "Module n of NUMBERED" does not count Module 0
 const unlocked = m => { const i = MODULES.indexOf(m); return i <= 0 || passed(MODULES[i - 1].id); };
 const coreDone = () => MODULES.every(m => passed(m.id));
 const findMod = id => MODULES.find(x => x.id === id);
@@ -792,6 +818,43 @@ const LOOP = CONTENT.loop, AGES = CONTENT.ages, PROMPTS = CONTENT.prompts, QCMP 
 
 const BODY = CONTENT.body;   // section bodies: assets/content-xx.js
 
+/* =========================================================
+   MODULE 0 — "Start here" (mindset). Texts come from content: zero
+   ========================================================= */
+const ZERO = CONTENT.zero;
+const zUL = (items, cls) => `<ul class="zl ${cls || ''}">${items.map(i => `<li><span>${i}</span></li>`).join('')}</ul>`;
+const zVoices = (title, list) => list && list.length ? `<h3 class="zh">${title}</h3><div class="voices">${list.map(v => `<figure class="voice">${v.img ? `<img src="${v.img}" alt="">` : ''}<blockquote>${v.text || ''}</blockquote>${v.who ? `<figcaption>${v.who}</figcaption>` : ''}</figure>`).join('')}</div>` : '';
+const ZERO_BODY = {
+welcome:() => { const z = ZERO; return `
+  <div class="defn"><span class="de">👋</span><p>${z.welcome_lead}</p></div>
+  <h3 class="zh">${z.how_h}</h3><p class="p">${z.how_p}</p>
+  <h3 class="zh">${z.prep_h}</h3><p class="p">${z.prep_intro}</p>${zUL(z.prep)}
+  ${callout('tip', '🎮', z.sim)}
+  <h3 class="zh">${z.why_h}</h3><p class="p">${z.why}</p>
+  ${callout('good', '🌟', z.means)}`; },
+ready:() => { const z = ZERO; return `
+  <p class="p">${z.ready_p1}</p>
+  <p class="p">${z.ready_p2}</p>${zUL(z.ready_items, 'num')}
+  ${callout('good', '🌱', z.ready_perm)}
+  ${callout('warn', '📍', z.ready_two)}`; },
+never:() => { const z = ZERO; return `
+  <p class="p">${z.never_p}</p>
+  <div class="mentors" role="table"><div class="mh"><span>${z.mentor_region}</span><span>${z.mentor_h}</span></div>${z.mentors.map(r => `<div class="mr"><span class="mreg">${r[0]}</span><b>${r[1]}</b></div>`).join('')}</div>
+  ${callout('tip', '🗓️', z.coaching)}
+  <h3 class="zh">${z.first_h}</h3>${zUL(z.first_items)}
+  <p class="p">${z.tl}</p>
+  ${callout('good', '💬', z.notconf)}`; },
+voices:() => { const z = ZERO; return `
+  <p class="p">${z.voices_p}</p>
+  <div class="tell"><div class="th"><span>${z.tell_you}</span><span>${z.tell_so}</span></div>${z.rows.map(r => `<div class="tr"><div class="t1"><span class="tq">“</span>${r[0]}</div><div class="t2"><span class="ta">→</span>${r[1]}</div></div>`).join('')}</div>
+  ${callout('warn', '🌟', z.new_courses)}
+  ${zVoices(z.students_h, z.voices)}${zVoices(z.tutors_h, z.tutors)}`; },
+closing:() => { const z = ZERO; return `
+  <div class="defn"><span class="de">🚀</span><p><b>${z.closing_h}</b><br>${z.closing_p}</p></div>
+  ${callout('tip', '💬', z.closing_dm)}`; }
+};
+Object.assign(BODY, ZERO_BODY);
+
 
 /* =========================================================
    RENDERING
@@ -851,7 +914,7 @@ function renderModule(m){
   clearTimers();
   renderNav('module');
   view.innerHTML = `
-  <div class="mhead"><span class="eyebrow">${tx('eyebrow', { n:m.n, total:TOTAL })}</span><h1>${m.e} ${m.title}</h1><div class="mobj">${m.obj}</div>
+  <div class="mhead"><span class="eyebrow">${m.eyebrow || tx('eyebrow', { n:m.n, total:NUMBERED })}</span><h1>${m.e} ${m.title}</h1><div class="mobj">${m.obj}</div>
     <div class="offer">${m.offer.map(o => `<div><span>${o[0]}</span>${o[1]}</div>`).join('')}</div></div>
   <div class="chips">${m.sections.map(s => `<button class="chip" data-jump="${s[0]}">${s[1]} ${s[2]}</button>`).join('')}</div>
   ${m.sections.map(s => `<section class="sec" id="sec-${s[0]}"><div class="sh"><span class="se">${s[1]}</span><h2>${s[2]}</h2></div>${BODY[s[0]]()}</section>`).join('')}
@@ -1120,7 +1183,7 @@ function tryCode(id){
   if (!validCode(id, inp.value)){ $('#err-' + id).textContent = UI.codeWrong; inp.focus(); return; }
   setFlag(id, true);
   $(`[data-codebox="${id}"]`).outerHTML = codeBox(id);
-  const m = findMod(curId()); if (m && m.n) refreshCTA(m);
+  const m = findMod(curId()); if (m && m.check) refreshCTA(m);
   confetti(80);
 }
 
