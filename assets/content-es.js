@@ -686,3 +686,196 @@ qcheck:() => `
     <div class="cklist">${['Los estudiantes hacen el resumen: dicen qué aprendieron.','Doy un adelanto motivador de la próxima clase.','Explico la próxima tarea y cómo entregarla.'].map((t, i) => `<button class="ck" data-ck="c${i}"><span class="ckb"></span><span>${t}</span></button>`).join('')}</div>
   </div>`
 };
+
+/* >>> MODULE 0 START (generated block: edit texts here) */
+CONTENT.zero = {
+  "welcome_lead": "<b>¡Bienvenido!</b> Eres parte de este lanzamiento porque ya sabes enseñar y conectar con los niños. Esta capacitación se apoya en lo que ya haces bien. No empieza desde cero, y tú tampoco.",
+  "how_h": "Cómo tomar esta capacitación",
+  "how_p": "Avanza a tu ritmo, con curiosidad y sin presión. No necesitas memorizar nada ni ser perfecto: el objetivo es sentirte cómodo con el método y saber dónde encontrar lo que necesitas. Una mezcla de entusiasmo y algo de incertidumbre es totalmente natural ante algo nuevo. Simplemente significa que te importa hacerlo bien.",
+  "prep_h": "Para qué te prepara esta capacitación",
+  "prep_intro": "Después de este módulo de mentalidad, la capacitación te acompaña en todo lo que necesitas para tus primeras clases:",
+  "prep": [
+    "<b>El nuevo modelo:</b> cómo se construyen las clases, cómo funciona la retroalimentación y cómo guiar a los estudiantes cuando usan IA.",
+    "<b>Preparación técnica:</b> Backoffice y notas del tutor, Classroom con Follow Mode y Kodland Sparks, con tres simulaciones de práctica que puedes repetir cuantas veces quieras.",
+    "<b>Calidad de la clase:</b> cómo se estructura una clase y los hábitos que la mantienen en camino: una apertura adecuada, preguntas de razonamiento y un cierre claro.",
+    "<b>Prompts para tutores:</b> cómo escribir un buen prompt y ayudar a los estudiantes a escribir los suyos.",
+    "<b>Tu curso:</b> una capacitación breve e informativa sobre el curso específico que vas a enseñar.",
+    "<b>Una prueba final</b> que se desbloquea cuando completas el material."
+  ],
+  "sim": "<b>No te saltes los simuladores: ahí se construye tu confianza.</b> Leer sobre una clase nueva es útil, pero hacerla es lo que la vuelve familiar. Los simuladores te permiten practicar cada paso real de una clase, desde abrirla en Backoffice hasta dictarla en Classroom, en un espacio seguro donde nada puede salir mal. Repítelos las veces que necesites y vuelve a ellos antes de tu primera clase en vivo: para entonces, cada clic te saldrá con naturalidad.",
+  "why_h": "Por qué estamos cambiando",
+  "why": "Los niños de hoy aprenden de otra manera: quieren construir cosas reales rápido, probar, equivocarse, corregir y mostrar lo que hicieron. Nuestro nuevo Modelo Educativo está construido en torno a eso. Cada clase parte de un resultado terminado, los errores son parte del proceso y la IA se usa de una forma adecuada para cada edad. Algunos cursos son totalmente nuevos; otros son cursos que ya conoces, renovados con el nuevo método.",
+  "means": "<b>Qué significa esto para ti.</b> Las habilidades que hoy te hacen un buen tutor (explicar con claridad, mantener a los niños motivados, notar quién necesita ayuda) son justo las que necesitan los nuevos cursos. Lo nuevo es el método y la estructura, y eso es lo que te da esta capacitación.",
+  "ready_p1": "Durante tu capacitación puede que todavía no veas las clases del curso: el contenido se finaliza cerca del lanzamiento. <b>Todas las clases estarán en Backoffice antes de que empiece tu curso.</b> La capacitación te prepara para todo lo demás, así estarás listo en el momento en que lleguen las clases.",
+  "ready_p2": "Estar listo no depende de haber visto todas las clases durante la capacitación. Significa:",
+  "ready_items": [
+    "<b>Entiendo el método:</b> cómo fluye una clase y por qué.",
+    "<b>Conozco la estructura:</b> módulos, formato de la clase, dónde vive cada pieza en Backoffice.",
+    "<b>Me siento seguro con lo técnico:</b> Backoffice, Classroom y las herramientas que uso en clase, practicadas en los simuladores hasta que me salen con naturalidad.",
+    "<b>Conozco mi rutina:</b> el contenido de la clase ahora se muestra directamente en Backoffice, todo en un solo lugar, sin necesidad de la Wiki. Leer las notas del tutor ahí antes de cada clase es mi responsabilidad.",
+    "<b>Sé a quién preguntar:</b> primero, mi mentor regional y, para grupos y horarios, mi TL."
+  ],
+  "ready_perm": "<b>Date permiso de volver a ser principiante.</b> Incluso el tutor más experimentado enseña un curso nuevo por primera vez solo una vez. A los niños les pedimos que digan «todavía no funciona, busquemos una estrategia», y lo mismo aplica para nosotros: tus primeras clases son tu prototipo. Cada una te resultará más fácil que la anterior, y te acompañaremos en cada paso.",
+  "ready_two": "<b>Dos cosas que la capacitación explica en detalle.</b> Primero, y lo más importante: dónde encontrarás el contenido de tus clases de ahora en adelante, las <b>notas del tutor (Teacher Notes) en Backoffice, tu nueva estrella polar</b>. Segundo, cómo prepararte para tu primera clase. Ambas se explican con claridad, paso a paso, más adelante en la capacitación.",
+  "never_p": "Tu mentor regional conoce los nuevos cursos y está para apoyarte en cada lanzamiento. <b>Pedir ayuda es lo que hacen los profesionales:</b> así es como los buenos tutores se vuelven excelentes. No necesitas un problema ni un flag para escribirle.",
+  "mentor_h": "Tu mentor",
+  "mentor_region": "Región",
+  "mentors": [
+    [
+      "LATAM (incluida España)",
+      "Priscila Aabye, Laura Orozco, Camilo Bermudez"
+    ]
+  ],
+  "coaching": "<b>¿Prefieres una sesión más larga?</b> Inicia sesión en el LMS con tu cuenta de Backoffice → <b>Coaching</b> → elige un horario y escribe en una línea con qué te gustaría recibir ayuda (por ejemplo, «Primera clase de [curso]»).",
+  "first_h": "Tu mentor es siempre tu primer contacto. Acude a él para:",
+  "first_items": [
+    "Problemas de gestión de la clase",
+    "Dudas sobre un curso o formato nuevo",
+    "Apoyo para llevar tus clases con fluidez",
+    "Preparar una clase en conjunto, o una revisión rápida de confianza antes de tu primera clase"
+  ],
+  "tl": "Para grupos y horarios, contacta a tu <b>TL</b>.",
+  "notconf": "<b>¿No te sientes seguro, sea cual sea el motivo?</b> Envíale un DM a tu mentor. Con eso basta: sin formularios, sin flags, sin explicaciones.",
+  "voices_p": "Los nuevos cursos no salen de la nada: responden a lo que nos dijeron tutores, estudiantes y familias. Aquí tienes parte de lo que escuchamos y lo que cambió gracias a eso.",
+  "tell_you": "Nos dijeron",
+  "tell_so": "Por eso los nuevos cursos…",
+  "rows": [
+    [
+      "Preparar una clase toma demasiado tiempo, saltando entre las diapositivas y una guía aparte en la Wiki.",
+      "Reúnen todo en un solo lugar: notas del tutor en cada diapositiva, un plan de clase con tiempos y un video breve de orientación en la diapositiva 1."
+    ],
+    [
+      "Es difícil mantener a todo el grupo en la misma diapositiva.",
+      "Usan Follow Mode: los estudiantes ven exactamente tu diapositiva y tus notas permanecen ocultas."
+    ],
+    [
+      "La dificultad no siempre coincide con la edad del grupo.",
+      "Se construyen por rango de edad (8–9, 10–12, 13+) y, en Matemáticas, las tareas van de lo simple a lo complejo en niveles claramente señalados."
+    ],
+    [
+      "Los niños pierden la motivación cuando no ven lo que están construyendo.",
+      "Empiezan cada clase desde el resultado terminado y los estudiantes publican su proyecto en Kodland Sparks, donde otros pueden verlo y reaccionar."
+    ],
+    [
+      "Es difícil saber quién realmente entendió la clase.",
+      "Cierran cada clase con una verificación del resultado y cada tarea entregada queda registrada, para que veas quién necesita ayuda."
+    ]
+  ],
+  "new_courses": "<b>Algunos cursos son totalmente nuevos y tú estás entre los primeros en enseñarlos.</b> Eso hace que tu voz sea aún más importante: después de tus primeras clases, cuéntale a tu mentor qué funcionó y qué no. Tu retroalimentación dará forma a la próxima versión.",
+  "students_h": "Lo que dicen los estudiantes",
+  "tutors_h": "De tutores que ya lo enseñaron",
+  "voices": [ /* REAL student/parent messages go here: { text: "…", who: "Parent · 3D Modeling · LATAM", img: "images/xxx.png" (optional) } */ ],
+  "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
+  "closing_h": "Ya sabes por qué estamos cambiando, qué significa «estar listo» y quién te acompaña.",
+  "closing_p": "Ahora entra a la capacitación con curiosidad: practica en los simuladores las veces que quieras y disfruta de ser de los primeros en llevar algo nuevo a nuestros estudiantes.",
+  "closing_dm": "Si en algún momento no te sientes seguro, basta con un DM a tu mentor."
+};
+CONTENT.quiz.m0 = [
+  {
+    "q": "Estás haciendo tu capacitación y las clases del curso aún no están disponibles. ¿Qué haces?",
+    "o": [
+      "Espero a tener las clases antes de empezar la capacitación.",
+      "Completo la capacitación sobre método y estructura; las clases estarán en Backoffice antes de que empiece el curso.",
+      "Busco material parecido en la Wiki."
+    ],
+    "a": 1,
+    "e": "Estar listo no depende de haber visto todas las clases. La capacitación cubre el método y la estructura, y todas las clases estarán en Backoffice antes de que empiece tu curso."
+  },
+  {
+    "q": "Unos días antes de tu primera clase no te sientes seguro. ¿Qué haces?",
+    "o": [
+      "Me lo guardo y espero que salga bien.",
+      "Le envío un DM a mi mentor.",
+      "Pido que me retiren del curso."
+    ],
+    "a": 1,
+    "e": "Un DM a tu mentor es suficiente: sin formularios, sin flags y sin explicaciones. Pedir ayuda es lo que hacen los profesionales."
+  },
+  {
+    "q": "Quieres ayuda para preparar tu primera clase. ¿Cuál es la forma más rápida?",
+    "o": [
+      "Enviarle un DM a mi mentor regional o reservar una sesión en el LMS.",
+      "Esperar a recibir un flag.",
+      "Pedirle opinión al padre o madre de un estudiante."
+    ],
+    "a": 0,
+    "e": "Tu mentor es siempre tu primer contacto. No necesitas un problema ni un flag: escríbele un DM o reserva un horario de Coaching en el LMS."
+  },
+  {
+    "q": "Un paso de la capacitación todavía no te queda claro. ¿Cuál es la mejor decisión?",
+    "o": [
+      "Detener la capacitación hasta que alguien me contacte.",
+      "Repetir el simulador y, si sigue sin quedar claro, escribirle a mi mentor.",
+      "Saltármelo: ya lo resolveré en clase."
+    ],
+    "a": 1,
+    "e": "Los simuladores son un espacio seguro que puedes repetir las veces que necesites. Si después sigue sin quedar claro, tu mentor está para ayudarte."
+  },
+  {
+    "q": "Tu primera clase no salió como planeabas. ¿Qué mentalidad es la más adecuada?",
+    "o": [
+      "«Este curso no es para mí.»",
+      "«Todavía no funciona: anotaré una mejora y hablaré con mi mentor.»",
+      "«Esperaré a que alguien más lo arregle.»"
+    ],
+    "a": 1,
+    "e": "Tus primeras clases son tu prototipo. Haz lo que les pedimos a los niños: «todavía no funciona», anota una mejora y habla con tu mentor."
+  }
+];
+CONTENT.modules.unshift({
+  "id": "m0",
+  "n": 0,
+  "e": "💛",
+  "color": "#F59E0B",
+  "title": "Empieza aquí: prepárate para el lanzamiento",
+  "check": "quiz",
+  "desc": "Por qué estamos cambiando, qué significa «estar listo» cuando aún no están las clases, quién te acompaña y qué nos dijeron tutores y estudiantes. Unos 20 minutos.",
+  "obj": "Empieza este lanzamiento con confianza y tranquilidad: sabrás por qué cambia el formato, qué significa realmente estar listo y a quién acudir cada vez que necesites ayuda.",
+  "eyebrow": "Módulo 0 · Empieza aquí · unos 20 minutos",
+  "offer": [
+    [
+      "💛",
+      "Parte de lo que ya haces bien."
+    ],
+    [
+      "✅",
+      "Entiende qué significa «estar listo» antes de que lleguen las clases."
+    ],
+    [
+      "🤝",
+      "Sabe exactamente a quién preguntar: primero, tu mentor."
+    ],
+    [
+      "🗣️",
+      "Mira cómo la voz de tutores y estudiantes dio forma a los nuevos cursos."
+    ]
+  ],
+  "sections": [
+    [
+      "welcome",
+      "👋",
+      "Te damos la bienvenida y por qué cambiamos"
+    ],
+    [
+      "ready",
+      "✅",
+      "Qué significa «estar listo» ahora"
+    ],
+    [
+      "never",
+      "🤝",
+      "Nunca estás solo"
+    ],
+    [
+      "voices",
+      "🗣️",
+      "Creado con tu voz, querido por los estudiantes"
+    ],
+    [
+      "closing",
+      "🚀",
+      "Estás listo para empezar"
+    ]
+  ]
+});
+/* <<< MODULE 0 END */

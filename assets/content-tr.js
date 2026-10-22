@@ -686,3 +686,196 @@ qcheck:() => `
     <div class="cklist">${['Özeti öğrenciler yapıyor: ne öğrendiklerini söylüyorlar.','Bir sonraki ders için motive edici bir teaser veriyorum.','Bir sonraki ödevi ve nasıl teslim edileceğini açıklıyorum.'].map((t, i) => `<button class="ck" data-ck="c${i}"><span class="ckb"></span><span>${t}</span></button>`).join('')}</div>
   </div>`
 };
+
+/* >>> MODULE 0 START (generated block: edit texts here) */
+CONTENT.zero = {
+  "welcome_lead": "<b>Hoş geldiniz!</b> Bu lansmanın bir parçasısınız, çünkü nasıl öğreteceğinizi ve çocuklarla nasıl bağ kuracağınızı zaten biliyorsunuz. Bu eğitim, zaten iyi yaptığınız şeylerin üzerine kuruluyor. Sıfırdan başlamıyor, siz de sıfırdan başlamıyorsunuz.",
+  "how_h": "Bu eğitimi nasıl alacaksınız",
+  "how_p": "Baskıyla değil, merakla ve kendi hızınızda ilerleyin. Hiçbir şeyi ezberlemeniz ya da mükemmel olmanız gerekmiyor: amaç, yöntemle rahat hissetmek ve ihtiyacınız olanı nerede bulacağınızı bilmek. Yeni bir şey karşısında heyecanla birlikte biraz belirsizlik hissetmek tamamen doğaldır. Bu, işi iyi yapmayı önemsediğiniz anlamına gelir.",
+  "prep_h": "Bu eğitim sizi neye hazırlıyor",
+  "prep_intro": "Bu zihniyet modülünden sonra eğitim, ilk dersleriniz için ihtiyacınız olan her şeyde size eşlik ediyor:",
+  "prep": [
+    "<b>Yeni model:</b> derslerin nasıl kurulduğu, geri bildirimin nasıl işlediği ve öğrencilere yapay zekâ kullanırken nasıl rehberlik edeceğiniz.",
+    "<b>Teknik hazırlık:</b> Backoffice ve Öğretmen Notları, Follow Mode ile Classroom ve Kodland Sparks; istediğiniz kadar tekrarlayabileceğiniz üç uygulama simülasyonuyla.",
+    "<b>Ders kalitesi:</b> bir dersin nasıl yapılandırıldığı ve dersi yolunda tutan alışkanlıklar: doğru bir açılış, akıl yürütmeyi tetikleyen sorular ve net bir kapanış.",
+    "<b>Eğitmenler için promptlar:</b> iyi bir prompt nasıl yazılır ve öğrencilerin kendi promptlarını yazmasına nasıl yardımcı olunur.",
+    "<b>Kursunuz:</b> öğreteceğiniz belirli kurs hakkında kısa, bilgilendirici bir eğitim.",
+    "<b>Final testi:</b> materyali tamamladığınızda açılır."
+  ],
+  "sim": "<b>Simülatörleri atlamayın: özgüveniniz orada oluşur.</b> Yeni bir ders hakkında okumak faydalıdır, ama onu yapmak dersi tanıdık hâle getirir. Simülatörler, bir dersin her gerçek adımını (Backoffice’te açmaktan Classroom’da yürütmeye kadar) hiçbir şeyin ters gidemeyeceği güvenli bir ortamda denemenizi sağlar. İhtiyacınız olduğu kadar tekrarlayın ve ilk canlı dersinizden önce yeniden bakın: o zamana kadar her tıklama doğal gelecek.",
+  "why_h": "Neden değişiyoruz",
+  "why": "Bugünün çocukları farklı öğreniyor: gerçek şeyleri hızla inşa etmek, denemek, hata yapmak, düzeltmek ve yaptıklarını göstermek istiyorlar. Yeni Eğitim Modelimiz bunun etrafında kuruldu. Her ders bitmiş bir sonuçtan başlar, hatalar sürecin bir parçasıdır ve yapay zekâ her yaşa uygun şekilde kullanılır. Bazı kurslar tamamen yeni; bazıları ise zaten bildiğiniz, yeni yöntemle yenilenmiş kurslar.",
+  "means": "<b>Bu sizin için ne anlama geliyor.</b> Bugün sizi iyi bir eğitmen yapan beceriler (net anlatmak, çocukları meşgul tutmak, kimin desteğe ihtiyacı olduğunu fark etmek) yeni kursların tam olarak ihtiyaç duyduğu becerilerdir. Yeni olan yöntem ve yapıdır; bu eğitim size bunu veriyor.",
+  "ready_p1": "Eğitiminiz sırasında kurs derslerini henüz göremeyebilirsiniz: içerik lansmana yakın tamamlanır. <b>Her ders, kursunuz başlamadan önce Backoffice’te olacak.</b> Eğitim sizi geri kalan her şeye hazırlar; böylece dersler geldiği anda hazır olursunuz.",
+  "ready_p2": "Hazır olmak, eğitim sırasında her dersi görmüş olmaya bağlı değildir. Şu anlama gelir:",
+  "ready_items": [
+    "<b>Yöntemi anlıyorum:</b> bir dersin nasıl aktığını ve nedenini.",
+    "<b>Yapıyı biliyorum:</b> modüller, ders formatı, her parçanın Backoffice’te nerede olduğu.",
+    "<b>Teknik tarafta kendime güveniyorum:</b> Backoffice, Classroom ve derste kullandığım araçlar; doğal gelene kadar simülatörlerde pratik yaptım.",
+    "<b>Rutinimi biliyorum:</b> ders içeriği artık doğrudan Backoffice’te, hepsi tek bir yerde gösteriliyor; Wiki’ye gerek yok. Her dersten önce oradaki Öğretmen Notlarını okumak benim sorumluluğum.",
+    "<b>Kime soracağımı biliyorum:</b> önce bölgesel mentorum, gruplar ve program için de TL’im."
+  ],
+  "ready_perm": "<b>Kendinize yeniden acemi olma izni verin.</b> En deneyimli eğitmen bile yeni bir kursu ilk kez yalnızca bir kez anlatır. Çocuklardan «henüz çalışmıyor, bir strateji bulalım» demelerini isteriz; aynısı bizim için de geçerli: ilk dersleriniz sizin prototipiniz. Her biri bir öncekinden daha kolay gelecek ve her adımda yanınızda olacağız.",
+  "ready_two": "<b>Eğitimin ayrıntılı açıkladığı iki şey.</b> Birincisi ve en önemlisi: bundan sonra ders içeriğinizi nerede bulacağınız, yani <b>Backoffice’teki Öğretmen Notları, yeni kutup yıldızınız</b>. İkincisi, ilk dersinize nasıl hazırlanacağınız. İkisi de eğitimin ilerleyen bölümlerinde adım adım net şekilde anlatılıyor.",
+  "never_p": "Bölgesel mentorunuz yeni kursları biliyor ve her lansmanda size destek olmak için burada. <b>Yardım istemek profesyonellerin yaptığı şeydir:</b> iyi eğitmenler böyle çok iyi eğitmen olur. Ulaşmak için bir sorun ya da flag’e ihtiyacınız yok.",
+  "mentor_h": "Mentorunuz",
+  "mentor_region": "Bölge",
+  "mentors": [
+    [
+      "Türkiye",
+      "Betül Topkan, Saner Aykanat"
+    ]
+  ],
+  "coaching": "<b>Daha uzun bir oturum mu tercih edersiniz?</b> Backoffice hesabınızla LMS’e giriş yapın → <b>Coaching</b> → bir zaman dilimi seçin ve hangi konuda yardım istediğinizi tek satırda yazın (örneğin, «[kurs] ilk dersi»).",
+  "first_h": "Mentorunuz her zaman ilk iletişim noktanızdır. Şunlar için mentorunuza başvurun:",
+  "first_items": [
+    "Sınıf yönetimi sorunları",
+    "Yeni bir kurs veya format hakkındaki sorular",
+    "Derslerinizi sorunsuz yürütme konusunda destek",
+    "Bir dersi birlikte hazırlamak ya da ilk dersinizden önce hızlı bir özgüven kontrolü"
+  ],
+  "tl": "Gruplar ve program için <b>TL</b>’inizle iletişime geçin.",
+  "notconf": "<b>Herhangi bir nedenle kendinize güvenmiyor musunuz?</b> Mentorunuza DM gönderin. Bu yeterli: form yok, flag yok, açıklama yapmanıza gerek yok.",
+  "voices_p": "Yeni kurslar durduk yere ortaya çıkmıyor: eğitmenlerin, öğrencilerin ve ailelerin bize söylediklerine yanıt veriyor. İşte duyduklarımızdan bir kısmı ve bunun sonucunda neyin değiştiği.",
+  "tell_you": "Bize şunu söylediniz",
+  "tell_so": "Bu yüzden yeni kurslar…",
+  "rows": [
+    [
+      "Bir dersi hazırlamak çok uzun sürüyor; slaytlar ile ayrı bir Wiki kılavuzu arasında gidip geliyorsunuz.",
+      "Her şeyi tek bir yerde topluyor: her slaytta Öğretmen Notları, zamanlamalı bir ders planı ve 1. slaytta kısa bir video brifingi."
+    ],
+    [
+      "Tüm grubu aynı slaytta tutmak zor.",
+      "Follow Mode kullanıyor: öğrenciler tam olarak sizin slaydınızı görür, notlarınız gizli kalır."
+    ],
+    [
+      "Zorluk seviyesi her zaman grubun yaşına uymuyor.",
+      "Yaş kategorilerine göre (8–9, 10–12, 13+) oluşturuluyor; Matematik’te görevler açıkça etiketlenmiş seviyelerle basitten karmaşığa ilerliyor."
+    ],
+    [
+      "Çocuklar ne inşa ettiklerini göremediklerinde motivasyonlarını kaybediyor.",
+      "Her derse bitmiş sonuçtan başlıyor ve öğrenciler projelerini Kodland Sparks’ta yayınlıyor; başkaları görüp tepki verebiliyor."
+    ],
+    [
+      "Dersi kimin gerçekten anladığını bilmek zor.",
+      "Her dersi bir sonuç kontrolüyle bitiriyor ve teslim edilen her görev izleniyor; böylece kimin desteğe ihtiyacı olduğunu görebilirsiniz."
+    ]
+  ],
+  "new_courses": "<b>Bazı kurslar tamamen yeni ve onları anlatan ilk kişiler arasındasınız.</b> Bu da sesinizi daha da önemli kılıyor: ilk derslerinizden sonra mentorunuza neyin işe yarayıp neyin yaramadığını anlatın. Geri bildiriminiz bir sonraki sürümü şekillendirecek.",
+  "students_h": "Öğrenciler ne diyor",
+  "tutors_h": "Bunu daha önce anlatmış eğitmenlerden",
+  "voices": [ /* REAL student/parent messages go here: { text: "…", who: "Parent · 3D Modeling · LATAM", img: "images/xxx.png" (optional) } */ ],
+  "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
+  "closing_h": "Neden değiştiğimizi, «hazır olmak» ne demek olduğunu ve kimlerin yanınızda olduğunu biliyorsunuz.",
+  "closing_p": "Şimdi eğitime merakla dalın: simülatörlerde istediğiniz kadar pratik yapın ve öğrencilerimize yeni bir şey getiren ilk kişilerden biri olmanın keyfini çıkarın.",
+  "closing_dm": "Herhangi bir anda kendinize güvenmezseniz, mentorunuza bir DM yeterli."
+};
+CONTENT.quiz.m0 = [
+  {
+    "q": "Eğitiminizi yapıyorsunuz ve kurs dersleri henüz mevcut değil. Ne yaparsınız?",
+    "o": [
+      "Eğitime başlamadan önce derslerin gelmesini beklerim.",
+      "Yöntem ve yapı eğitimini tamamlarım; dersler kurs başlamadan önce Backoffice’te olacak.",
+      "Wiki’de benzer materyal ararım."
+    ],
+    "a": 1,
+    "e": "Hazır olmak, her dersi görmüş olmaya bağlı değildir. Eğitim yöntem ve yapıyı kapsar; her ders, kursunuz başlamadan önce Backoffice’te olacak."
+  },
+  {
+    "q": "İlk dersinizden birkaç gün önce kendinize güvenmiyorsunuz. Ne yaparsınız?",
+    "o": [
+      "Kendime saklarım ve iyi geçmesini umarım.",
+      "Mentoruma DM gönderirim.",
+      "Kurstan çıkarılmayı isterim."
+    ],
+    "a": 1,
+    "e": "Mentora bir DM yeterli: form yok, flag yok, açıklama yok. Yardım istemek profesyonellerin yaptığı şeydir."
+  },
+  {
+    "q": "İlk dersinizi hazırlamak için yardım istiyorsunuz. En hızlı yol hangisi?",
+    "o": [
+      "Bölgesel mentoruma DM göndermek ya da LMS’ten bir oturum ayırtmak.",
+      "Bir flag almayı beklemek.",
+      "Bir öğrencinin velisinden geri bildirim istemek."
+    ],
+    "a": 0,
+    "e": "Mentorunuz her zaman ilk iletişim noktanızdır. Bir sorun ya da flag’e gerek yok: DM gönderin ya da LMS’ten bir Coaching oturumu ayırtın."
+  },
+  {
+    "q": "Eğitimdeki bir adım hâlâ net değil. En iyi hamle nedir?",
+    "o": [
+      "Biri benimle iletişime geçene kadar eğitimi durdurmak.",
+      "Simülatörü tekrarlamak ve hâlâ net değilse mentoruma yazmak.",
+      "Atlamak: derste çözerim."
+    ],
+    "a": 1,
+    "e": "Simülatörler, ihtiyaç duyduğunuz kadar tekrarlayabileceğiniz güvenli bir ortamdır. Sonrasında da net değilse mentorunuz yardıma hazır."
+  },
+  {
+    "q": "İlk dersiniz planladığınız gibi gitmedi. Hangi bakış açısı en uygun?",
+    "o": [
+      "«Bu kurs bana göre değil.»",
+      "«Henüz çalışmıyor: bir iyileştirme not alacağım ve mentorumla konuşacağım.»",
+      "«Başka biri düzeltene kadar bekleyeceğim.»"
+    ],
+    "a": 1,
+    "e": "İlk dersleriniz sizin prototipiniz. Çocuklardan istediğimiz gibi yapın: «henüz çalışmıyor», bir iyileştirme not alın ve mentorunuzla konuşun."
+  }
+];
+CONTENT.modules.unshift({
+  "id": "m0",
+  "n": 0,
+  "e": "💛",
+  "color": "#F59E0B",
+  "title": "Buradan başlayın: lansmana hazırlanın",
+  "check": "quiz",
+  "desc": "Neden değişiyoruz, dersler henüz hazır değilken «hazır olmak» ne demek, size kimler destek oluyor ve eğitmenler ile öğrenciler bize ne söyledi. Yaklaşık 20 dakika.",
+  "obj": "Bu lansmana kendinize güvenerek ve rahat bir şekilde başlayın: formatın neden değiştiğini, hazır olmanın gerçekte ne anlama geldiğini ve yardıma ihtiyaç duyduğunuzda kime başvuracağınızı öğreneceksiniz.",
+  "eyebrow": "Modül 0 · Buradan başlayın · yaklaşık 20 dakika",
+  "offer": [
+    [
+      "💛",
+      "Zaten iyi yaptığınız şeylerden yola çıkın."
+    ],
+    [
+      "✅",
+      "Dersler gelmeden önce «hazır olmak» ne demek, öğrenin."
+    ],
+    [
+      "🤝",
+      "Kime soracağınızı tam olarak bilin: önce mentorunuz."
+    ],
+    [
+      "🗣️",
+      "Eğitmenlerin ve öğrencilerin sesinin yeni kursları nasıl şekillendirdiğini görün."
+    ]
+  ],
+  "sections": [
+    [
+      "welcome",
+      "👋",
+      "Hoş geldiniz ve neden değişiyoruz"
+    ],
+    [
+      "ready",
+      "✅",
+      "Artık «hazır olmak» ne demek"
+    ],
+    [
+      "never",
+      "🤝",
+      "Asla yalnız değilsiniz"
+    ],
+    [
+      "voices",
+      "🗣️",
+      "Sizin sesinizle oluşturuldu, öğrencilerin sevdiği"
+    ],
+    [
+      "closing",
+      "🚀",
+      "Başlamaya hazırsınız"
+    ]
+  ]
+});
+/* <<< MODULE 0 END */

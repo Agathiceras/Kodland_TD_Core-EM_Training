@@ -686,3 +686,196 @@ qcheck:() => `
     <div class="cklist">${['Siswa melakukan rekap: mereka menyebutkan apa yang mereka pelajari.','Saya memberikan teaser yang memotivasi untuk pelajaran berikutnya.','Saya menjelaskan PR berikutnya dan cara mengumpulkannya.'].map((t, i) => `<button class="ck" data-ck="c${i}"><span class="ckb"></span><span>${t}</span></button>`).join('')}</div>
   </div>`
 };
+
+/* >>> MODULE 0 START (generated block: edit texts here) */
+CONTENT.zero = {
+  "welcome_lead": "<b>Selamat datang!</b> Anda menjadi bagian dari peluncuran ini karena Anda sudah tahu cara mengajar dan cara terhubung dengan anak-anak. Pelatihan ini dibangun di atas hal-hal yang sudah Anda lakukan dengan baik. Pelatihan ini tidak mulai dari nol, dan Anda pun tidak.",
+  "how_h": "Cara mengikuti pelatihan ini",
+  "how_p": "Jalani dengan kecepatan Anda sendiri, dengan rasa ingin tahu, bukan tekanan. Anda tidak perlu menghafal apa pun atau menjadi sempurna: tujuannya adalah merasa nyaman dengan metodenya dan tahu di mana menemukan apa yang Anda butuhkan. Perpaduan antara antusiasme dan sedikit keraguan sangat wajar saat menghadapi hal baru. Itu hanya berarti Anda peduli untuk melakukannya dengan baik.",
+  "prep_h": "Apa yang disiapkan pelatihan ini untuk Anda",
+  "prep_intro": "Setelah modul pola pikir ini, pelatihan akan memandu Anda melalui semua yang dibutuhkan untuk pelajaran pertama Anda:",
+  "prep": [
+    "<b>Model baru:</b> cara pelajaran disusun, cara kerja umpan balik, dan cara membimbing siswa saat mereka menggunakan AI.",
+    "<b>Persiapan teknis:</b> Backoffice dan Teacher Notes, Classroom dengan Follow Mode, serta Kodland Sparks, dengan tiga simulasi latihan yang bisa Anda ulang sesering yang Anda mau.",
+    "<b>Kualitas pelajaran:</b> bagaimana pelajaran disusun dan kebiasaan yang menjaganya tetap di jalur: pembukaan yang tepat, pertanyaan penalaran, dan penutupan yang jelas.",
+    "<b>Prompt untuk tutor:</b> cara menulis prompt yang baik dan membantu siswa menulis prompt mereka sendiri.",
+    "<b>Kursus Anda:</b> pelatihan singkat yang informatif tentang kursus spesifik yang akan Anda ajarkan.",
+    "<b>Tes akhir</b> yang terbuka setelah Anda menyelesaikan materi."
+  ],
+  "sim": "<b>Jangan lewati simulator: di sanalah kepercayaan diri Anda terbentuk.</b> Membaca tentang pelajaran baru memang berguna, tetapi melakukannya-lah yang membuatnya terasa akrab. Simulator memungkinkan Anda berlatih setiap langkah nyata sebuah pelajaran, mulai dari membukanya di Backoffice hingga menjalankannya di Classroom, di ruang aman tempat tidak ada yang bisa salah. Ulangi sebanyak yang Anda perlukan, dan kembali ke sana sebelum pelajaran langsung pertama Anda: saat itu, setiap klik akan terasa alami.",
+  "why_h": "Mengapa kita berubah",
+  "why": "Anak-anak zaman sekarang belajar dengan cara berbeda: mereka ingin membuat hal nyata dengan cepat, mencoba, gagal, memperbaiki, dan menunjukkan hasilnya. Model Edukasi baru kita dibangun di sekitar hal itu. Setiap pelajaran dimulai dari hasil jadi, kesalahan adalah bagian dari proses, dan AI digunakan dengan cara yang sesuai untuk setiap usia. Beberapa kursus benar-benar baru; yang lain adalah kursus yang sudah Anda kenal, disegarkan dengan metode baru.",
+  "means": "<b>Apa artinya bagi Anda.</b> Keterampilan yang membuat Anda menjadi tutor yang baik saat ini (menjelaskan dengan jelas, menjaga keterlibatan anak-anak, menyadari siapa yang butuh bantuan) persis keterampilan yang dibutuhkan kursus baru. Yang baru adalah metode dan strukturnya, dan itulah yang diberikan pelatihan ini.",
+  "ready_p1": "Selama pelatihan, Anda mungkin belum melihat pelajaran kursus: konten diselesaikan mendekati peluncuran. <b>Setiap pelajaran akan ada di Backoffice sebelum kursus Anda dimulai.</b> Pelatihan ini menyiapkan Anda untuk semua hal lainnya, sehingga Anda siap begitu pelajaran tiba.",
+  "ready_p2": "Siap tidak bergantung pada apakah Anda sudah melihat setiap pelajaran selama pelatihan. Artinya:",
+  "ready_items": [
+    "<b>Saya memahami metodenya:</b> bagaimana pelajaran berjalan dan mengapa.",
+    "<b>Saya tahu strukturnya:</b> modul, format pelajaran, dan di mana setiap bagian berada di Backoffice.",
+    "<b>Saya percaya diri dengan sisi teknis:</b> Backoffice, Classroom, dan alat yang saya gunakan di kelas, dilatih di simulator sampai terasa alami.",
+    "<b>Saya tahu rutinitas saya:</b> konten pelajaran kini ditampilkan langsung di Backoffice, semuanya di satu tempat, tanpa perlu Wiki. Membaca Teacher Notes di sana sebelum setiap pelajaran adalah tanggung jawab saya.",
+    "<b>Saya tahu harus bertanya ke siapa:</b> mentor regional saya lebih dulu, dan TL saya untuk grup dan jadwal."
+  ],
+  "ready_perm": "<b>Izinkan diri Anda menjadi pemula lagi.</b> Bahkan tutor paling berpengalaman pun hanya sekali mengajar kursus baru untuk pertama kalinya. Kita meminta anak-anak berkata «belum berhasil, ayo cari strategi», dan hal yang sama berlaku untuk kita: pelajaran pertama Anda adalah prototipe Anda. Setiap pelajaran akan terasa lebih mudah dari sebelumnya, dan kami akan mendukung Anda di setiap langkah.",
+  "ready_two": "<b>Dua hal yang dijelaskan pelatihan secara rinci.</b> Pertama, dan yang terpenting: di mana Anda akan menemukan konten pelajaran mulai sekarang, yaitu <b>Teacher Notes di Backoffice, bintang penuntun baru Anda</b>. Kedua, cara mempersiapkan pelajaran pertama Anda. Keduanya dijelaskan dengan jelas, langkah demi langkah, di bagian selanjutnya dari pelatihan.",
+  "never_p": "Mentor regional Anda mengenal kursus-kursus baru dan siap mendukung Anda di setiap peluncuran. <b>Meminta bantuan adalah hal yang dilakukan para profesional:</b> begitulah tutor yang baik menjadi tutor yang hebat. Anda tidak perlu menunggu masalah atau flag untuk menghubungi.",
+  "mentor_h": "Mentor Anda",
+  "mentor_region": "Wilayah",
+  "mentors": [
+    [
+      "Indonesia, GCC",
+      "Syfa Nurafni Siregar"
+    ]
+  ],
+  "coaching": "<b>Lebih suka sesi yang lebih panjang?</b> Masuk ke LMS dengan akun Backoffice Anda → <b>Coaching</b> → pilih slot dan tulis dalam satu baris hal yang ingin Anda minta bantuannya (misalnya, «Pelajaran pertama [kursus]»).",
+  "first_h": "Mentor Anda selalu menjadi kontak pertama. Hubungi mentor Anda untuk:",
+  "first_items": [
+    "Masalah pengelolaan kelas",
+    "Pertanyaan tentang kursus atau format baru",
+    "Dukungan agar pelajaran Anda berjalan lancar",
+    "Menyiapkan pelajaran bersama, atau pengecekan cepat rasa percaya diri sebelum kelas pertama Anda"
+  ],
+  "tl": "Untuk grup dan jadwal, hubungi <b>TL</b> Anda.",
+  "notconf": "<b>Merasa kurang percaya diri, apa pun alasannya?</b> Kirim DM ke mentor Anda. Itu sudah cukup: tanpa formulir, tanpa flag, tanpa perlu menjelaskan.",
+  "voices_p": "Kursus baru tidak muncul begitu saja: kursus itu menjawab hal-hal yang disampaikan tutor, siswa, dan keluarga kepada kami. Berikut sebagian dari yang kami dengar, dan apa yang berubah karenanya.",
+  "tell_you": "Anda memberi tahu kami",
+  "tell_so": "Maka kursus baru…",
+  "rows": [
+    [
+      "Menyiapkan pelajaran memakan waktu terlalu lama, harus berpindah antara slide dan panduan Wiki terpisah.",
+      "Menyatukan semuanya di satu tempat: Teacher Notes di setiap slide, rencana pelajaran dengan pembagian waktu, dan video briefing singkat di slide 1."
+    ],
+    [
+      "Sulit menjaga seluruh grup tetap di slide yang sama.",
+      "Menggunakan Follow Mode: siswa melihat persis slide Anda, dan catatan Anda tetap tersembunyi."
+    ],
+    [
+      "Tingkat kesulitan tidak selalu sesuai dengan usia kelompok.",
+      "Disusun berdasarkan jalur usia (8–9, 10–12, 13+), dan di Matematika tugas bergerak dari sederhana ke kompleks pada level yang diberi label jelas."
+    ],
+    [
+      "Anak-anak kehilangan motivasi ketika tidak bisa melihat apa yang mereka buat.",
+      "Memulai setiap pelajaran dari hasil jadi, dan siswa memublikasikan proyek mereka di Kodland Sparks, tempat orang lain dapat melihat dan bereaksi."
+    ],
+    [
+      "Sulit mengetahui siapa yang benar-benar memahami pelajaran.",
+      "Mengakhiri setiap pelajaran dengan pengecekan hasil, dan setiap tugas yang dikumpulkan dilacak sehingga Anda bisa melihat siapa yang butuh bantuan."
+    ]
+  ],
+  "new_courses": "<b>Beberapa kursus benar-benar baru, dan Anda termasuk yang pertama mengajarkannya.</b> Itu membuat suara Anda semakin penting: setelah pelajaran pertama Anda, ceritakan kepada mentor apa yang berhasil dan apa yang tidak. Umpan balik Anda akan membentuk versi berikutnya.",
+  "students_h": "Kata para siswa",
+  "tutors_h": "Dari tutor yang sudah mengajarkannya",
+  "voices": [ /* REAL student/parent messages go here: { text: "…", who: "Parent · 3D Modeling · LATAM", img: "images/xxx.png" (optional) } */ ],
+  "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
+  "closing_h": "Anda tahu mengapa kita berubah, apa arti «siap», dan siapa yang ada untuk Anda.",
+  "closing_p": "Sekarang masuklah ke pelatihan dengan rasa ingin tahu: berlatihlah di simulator sesering yang Anda mau, dan nikmati menjadi salah satu yang pertama membawa sesuatu yang baru bagi siswa kita.",
+  "closing_dm": "Jika kapan pun Anda merasa kurang percaya diri, cukup kirim DM ke mentor Anda."
+};
+CONTENT.quiz.m0 = [
+  {
+    "q": "Anda sedang mengikuti pelatihan dan pelajaran kursus belum tersedia. Apa yang Anda lakukan?",
+    "o": [
+      "Menunggu pelajaran tersedia sebelum memulai pelatihan.",
+      "Menyelesaikan pelatihan tentang metode dan struktur; pelajaran akan ada di Backoffice sebelum kursus dimulai.",
+      "Mencari materi serupa di Wiki."
+    ],
+    "a": 1,
+    "e": "Siap tidak bergantung pada apakah Anda sudah melihat setiap pelajaran. Pelatihan mencakup metode dan struktur, dan setiap pelajaran akan ada di Backoffice sebelum kursus Anda dimulai."
+  },
+  {
+    "q": "Beberapa hari sebelum pelajaran pertama, Anda merasa kurang percaya diri. Apa yang Anda lakukan?",
+    "o": [
+      "Memendamnya sendiri dan berharap semuanya berjalan lancar.",
+      "Mengirim DM ke mentor saya.",
+      "Meminta untuk dikeluarkan dari kursus."
+    ],
+    "a": 1,
+    "e": "Satu DM ke mentor sudah cukup: tanpa formulir, tanpa flag, dan tanpa penjelasan. Meminta bantuan adalah hal yang dilakukan para profesional."
+  },
+  {
+    "q": "Anda ingin dibantu menyiapkan pelajaran pertama. Apa cara tercepat?",
+    "o": [
+      "Mengirim DM ke mentor regional saya, atau memesan sesi di LMS.",
+      "Menunggu sampai menerima flag.",
+      "Meminta umpan balik dari orang tua siswa."
+    ],
+    "a": 0,
+    "e": "Mentor Anda selalu menjadi kontak pertama. Anda tidak butuh masalah atau flag: kirim DM, atau pesan slot Coaching di LMS."
+  },
+  {
+    "q": "Satu langkah dalam pelatihan masih terasa kurang jelas. Apa langkah terbaik?",
+    "o": [
+      "Menghentikan pelatihan sampai ada yang menghubungi saya.",
+      "Mengulang simulator dan, jika masih belum jelas, mengirim pesan ke mentor saya.",
+      "Melewatinya: nanti juga paham di kelas."
+    ],
+    "a": 1,
+    "e": "Simulator adalah ruang aman yang bisa diulang sesering yang Anda perlukan. Jika setelah itu masih belum jelas, mentor Anda siap membantu."
+  },
+  {
+    "q": "Pelajaran pertama Anda tidak berjalan sesuai rencana. Pola pikir mana yang paling tepat?",
+    "o": [
+      "«Kursus ini bukan untuk saya.»",
+      "«Belum berhasil: saya akan mencatat satu perbaikan dan berbicara dengan mentor saya.»",
+      "«Saya akan menunggu orang lain memperbaikinya.»"
+    ],
+    "a": 1,
+    "e": "Pelajaran pertama Anda adalah prototipe Anda. Lakukan seperti yang kita minta dari anak-anak: «belum berhasil», catat satu perbaikan, dan bicarakan dengan mentor Anda."
+  }
+];
+CONTENT.modules.unshift({
+  "id": "m0",
+  "n": 0,
+  "e": "💛",
+  "color": "#F59E0B",
+  "title": "Mulai dari sini: bersiap untuk peluncuran",
+  "check": "quiz",
+  "desc": "Mengapa kita berubah, apa arti «siap» saat pelajaran belum tersedia, siapa yang mendampingi Anda, dan apa kata para tutor dan siswa. Sekitar 20 menit.",
+  "obj": "Mulailah peluncuran ini dengan percaya diri dan tenang: Anda akan tahu mengapa formatnya berubah, apa arti sebenarnya dari siap, dan ke siapa Anda bisa meminta bantuan kapan pun diperlukan.",
+  "eyebrow": "Modul 0 · Mulai dari sini · sekitar 20 menit",
+  "offer": [
+    [
+      "💛",
+      "Mulai dari hal yang sudah Anda kuasai."
+    ],
+    [
+      "✅",
+      "Pahami arti «siap» sebelum pelajaran tiba."
+    ],
+    [
+      "🤝",
+      "Tahu persis harus bertanya ke siapa: mentor Anda lebih dulu."
+    ],
+    [
+      "🗣️",
+      "Lihat bagaimana suara tutor dan siswa membentuk kursus baru."
+    ]
+  ],
+  "sections": [
+    [
+      "welcome",
+      "👋",
+      "Selamat datang, dan mengapa kita berubah"
+    ],
+    [
+      "ready",
+      "✅",
+      "Apa arti «siap» sekarang"
+    ],
+    [
+      "never",
+      "🤝",
+      "Anda tidak pernah sendirian"
+    ],
+    [
+      "voices",
+      "🗣️",
+      "Dibangun bersama suara Anda, disukai siswa"
+    ],
+    [
+      "closing",
+      "🚀",
+      "Anda siap untuk memulai"
+    ]
+  ]
+});
+/* <<< MODULE 0 END */

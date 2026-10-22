@@ -686,3 +686,200 @@ qcheck:() => `
     <div class="cklist">${['Students do the recap: they say what they learned.','I give a motivating teaser for the next lesson.','I explain the next homework and how to hand it in.'].map((t, i) => `<button class="ck" data-ck="c${i}"><span class="ckb"></span><span>${t}</span></button>`).join('')}</div>
   </div>`
 };
+
+/* >>> MODULE 0 START (generated block: edit texts here) */
+CONTENT.zero = {
+  "welcome_lead": "<b>Welcome!</b> You are part of this launch because you already know how to teach and how to connect with kids. This training builds on what you already do well. It doesn’t start from zero, and neither do you.",
+  "how_h": "How to take this training",
+  "how_p": "Go at your own pace, with curiosity rather than pressure. You don’t need to memorise anything or be perfect: the goal is to feel at ease with the method and to know where to find what you need. A mix of excitement and a little uncertainty is completely natural with anything new. It simply means you care about doing it well.",
+  "prep_h": "What this training prepares you for",
+  "prep_intro": "After this mindset module, the training walks you through everything you need for your first lessons:",
+  "prep": [
+    "<b>The new model:</b> how lessons are built, how feedback works, and how to guide students when they use AI.",
+    "<b>Technical preparation:</b> Backoffice and Teacher Notes, the Classroom with Follow Mode, and Kodland Sparks, with three practice simulations you can repeat as often as you like.",
+    "<b>Lesson quality:</b> how a lesson is structured and the habits that keep it on track: a proper opening, reasoning questions and a clear closing.",
+    "<b>Prompts for tutors:</b> how to write a good prompt and help students write their own.",
+    "<b>Your course:</b> a short, informative training on the specific course you will teach.",
+    "<b>A final test</b> that unlocks once you complete the material."
+  ],
+  "sim": "<b>Don’t skip the simulators: they are where your confidence is built.</b> Reading about a new lesson is useful, but doing it is what makes it feel familiar. The simulators let you practise every real step of a lesson, from opening it in Backoffice to running it in the Classroom, in a safe space where nothing can go wrong. Repeat them as many times as you need, and come back to them before your first live lesson: by then, every click will already feel like second nature.",
+  "why_h": "Why we are changing",
+  "why": "Kids today learn differently: they want to build real things fast, try, fail, fix and show what they made. Our new Educational Model is built around that. Every lesson starts from a finished result, mistakes are part of the process, and AI is used in a way that fits each age. Some courses are brand new; others are courses you already know, refreshed with the new method.",
+  "means": "<b>What this means for you.</b> The skills that make you a good tutor today (explaining clearly, keeping kids engaged, noticing who needs help) are exactly the skills the new courses need. What’s new is the method and the structure, and that is what this training gives you.",
+  "ready_p1": "During your training you may not see the course lessons yet: content is finalised close to launch. <b>Every lesson will be in Backoffice before your course starts.</b> Your training prepares you for everything else, so you are ready the moment the lessons arrive.",
+  "ready_p2": "Being ready doesn’t depend on having seen every lesson during the training. It means:",
+  "ready_items": [
+    "<b>I understand the method:</b> how a lesson flows and why.",
+    "<b>I know the structure:</b> modules, lesson format, where each piece lives in Backoffice.",
+    "<b>I’m confident with the technical side:</b> Backoffice, the Classroom and the tools I use in class, practised in the simulators until they feel natural.",
+    "<b>I know my routine:</b> lesson content is now shown directly in Backoffice, all in one place, with no need for the Wiki. Reading the Teacher Notes there before every lesson is my responsibility.",
+    "<b>I know who to ask:</b> my regional mentor first, and my TL for groups and schedule."
+  ],
+  "ready_perm": "<b>Give yourself permission to be a beginner again.</b> Even the most experienced tutor teaches a new course for the first time once. We ask kids to say “it’s not working yet, let’s find a strategy”, and the same applies to us: your first lessons are your prototype. Each one will feel easier than the one before, and we will support you at every step.",
+  "ready_two": "<b>Two things the training explains in detail.</b> First, and most important: where you will find your lesson content from now on, the <b>Teacher Notes in Backoffice, your new North Star</b>. Second, how to prepare for your first lesson. Both are clearly explained, step by step, later in the training.",
+  "never_p": "Your regional mentor knows the new courses and is there to support you with every launch. <b>Asking for help is what professionals do:</b> it is how good tutors become great ones. You don’t need a problem or a flag to reach out.",
+  "mentor_h": "Your mentor(s)",
+  "mentor_region": "Region",
+  "mentors": [
+    [
+      "ENG",
+      "Gülay, Syfa Nurafni Siregar"
+    ],
+    [
+      "USA",
+      "Gülay"
+    ]
+  ],
+  "coaching": "<b>Prefer a longer session?</b> Log in to the LMS with your Backoffice account → <b>Coaching</b> → choose a slot and write in one line what you’d like help with (for example, “First lesson of [course]”).",
+  "first_h": "Your mentor is your first contact, always. Go to your mentor for:",
+  "first_items": [
+    "Class management issues",
+    "Questions about a new course or format",
+    "Support on how to run your lessons smoothly",
+    "Preparing a lesson together, or a quick confidence check before your first class"
+  ],
+  "tl": "For groups and schedule, contact your <b>TL</b>.",
+  "notconf": "<b>Not feeling confident, for whatever reason?</b> Send your mentor a DM. That’s enough: no form, no flag, no explanation needed.",
+  "voices_p": "New courses don’t come from nowhere: they answer things tutors, students and families told us. Here is some of what we heard, and what changed because of it.",
+  "tell_you": "You told us",
+  "tell_so": "So the new courses…",
+  "rows": [
+    [
+      "Preparing a lesson takes too long, jumping between the slides and a separate Wiki guide.",
+      "Put everything in one place: Teacher Notes on every slide, a lesson plan with timings and a short video briefing on slide 1."
+    ],
+    [
+      "Keeping the whole group on the same slide is hard.",
+      "Use Follow Mode: students see exactly your slide, and your notes stay hidden."
+    ],
+    [
+      "The difficulty doesn’t always match the age of the group.",
+      "Are built by age track (8–9, 10–12, 13+), and in Math tasks go from simple to complex on clearly labelled levels."
+    ],
+    [
+      "Kids lose motivation when they can’t see what they are building.",
+      "Start every lesson from the finished result, and students publish their project in Kodland Sparks, where others can see and react to it."
+    ],
+    [
+      "It’s hard to know who really understood the lesson.",
+      "End each lesson with an outcome check, and every submitted task is tracked so you can see who needs help."
+    ]
+  ],
+  "new_courses": "<b>Some courses are completely new, and you are among the first to teach them.</b> That makes your voice even more important: after your first lessons, tell your mentor what worked and what didn’t. Your feedback will shape the next version.",
+  "students_h": "What students say",
+  "tutors_h": "From tutors who already taught it",
+  "voices": [ /* REAL student/parent messages go here: { text: "…", who: "Parent · 3D Modeling · LATAM", img: "images/xxx.png" (optional) } */ ],
+  "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
+  "closing_h": "You know why we are changing, what “ready” means, and who is there for you.",
+  "closing_p": "Now dive into the training with curiosity: practise in the simulators as often as you like, and enjoy being one of the first to bring something new to our students.",
+  "closing_dm": "If at any moment you don’t feel confident, a DM to your mentor is all it takes."
+};
+CONTENT.quiz.m0 = [
+  {
+    "q": "You’re doing your training and the course lessons aren’t available yet. What do you do?",
+    "o": [
+      "Wait for the lessons before starting the training.",
+      "Complete the training on method and structure; the lessons will be in Backoffice before the course starts.",
+      "Search the Wiki for similar material."
+    ],
+    "a": 1,
+    "e": "Being ready doesn’t depend on having seen every lesson. The training covers the method and structure, and every lesson will be in Backoffice before your course starts."
+  },
+  {
+    "q": "A few days before your first lesson you don’t feel confident. What do you do?",
+    "o": [
+      "Keep it to yourself and hope it goes well.",
+      "Send your mentor a DM.",
+      "Ask to be removed from the course."
+    ],
+    "a": 1,
+    "e": "A DM to your mentor is enough: no form, no flag and no explanation needed. Asking for help is what professionals do."
+  },
+  {
+    "q": "You’d like help preparing your first lesson. What’s the fastest way?",
+    "o": [
+      "Send your regional mentor a DM, or book a session in the LMS.",
+      "Wait until you receive a flag.",
+      "Ask a student’s parent for feedback."
+    ],
+    "a": 0,
+    "e": "Your mentor is your first contact, always. You don’t need a problem or a flag to reach out: DM them, or book a Coaching slot in the LMS."
+  },
+  {
+    "q": "A step in the training still feels unclear. What’s the best move?",
+    "o": [
+      "Stop the training until someone contacts you.",
+      "Repeat the simulator and, if it’s still unclear, message your mentor.",
+      "Skip it: you’ll figure it out in class."
+    ],
+    "a": 1,
+    "e": "The simulators are a safe place to repeat as often as you need. If something is still unclear after that, your mentor is there to help."
+  },
+  {
+    "q": "Your first lesson didn’t go as planned. Which mindset fits best?",
+    "o": [
+      "“This course isn’t for me.”",
+      "“It’s not working yet: I’ll note one improvement and talk to my mentor.”",
+      "“I’ll wait for someone else to fix it.”"
+    ],
+    "a": 1,
+    "e": "Your first lessons are your prototype. Treat it like we ask kids to: “it’s not working yet”, note one improvement, and talk to your mentor."
+  }
+];
+CONTENT.modules.unshift({
+  "id": "m0",
+  "n": 0,
+  "e": "💛",
+  "color": "#F59E0B",
+  "title": "Start here: getting ready for the launch",
+  "check": "quiz",
+  "desc": "Why we’re changing, what “ready” means when the lessons aren’t there yet, who supports you, and what tutors and students told us. About 20 minutes.",
+  "obj": "Start this launch confident and at ease: you’ll know why the format is changing, what being ready really means, and who to turn to whenever you need help.",
+  "eyebrow": "Module 0 · Start here · about 20 minutes",
+  "offer": [
+    [
+      "💛",
+      "Start from what you already do well."
+    ],
+    [
+      "✅",
+      "Know what “ready” means before the lessons arrive."
+    ],
+    [
+      "🤝",
+      "Know exactly who to ask: your mentor first."
+    ],
+    [
+      "🗣️",
+      "See how tutors’ and students’ voices shaped the new courses."
+    ]
+  ],
+  "sections": [
+    [
+      "welcome",
+      "👋",
+      "Welcome, and why we are changing"
+    ],
+    [
+      "ready",
+      "✅",
+      "What “ready” means now"
+    ],
+    [
+      "never",
+      "🤝",
+      "You’re never alone"
+    ],
+    [
+      "voices",
+      "🗣️",
+      "Built with your voice, loved by students"
+    ],
+    [
+      "closing",
+      "🚀",
+      "You’re ready to start"
+    ]
+  ]
+});
+/* <<< MODULE 0 END */
