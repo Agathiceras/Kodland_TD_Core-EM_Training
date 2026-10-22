@@ -15,12 +15,12 @@ CONTENT.dir = 'ltr';                      // 'rtl' for Arabic
    INTERFACE STRINGS (page title, replicated Classroom, guide card)
    ========================================================= */
 CONTENT.ui = {
-  title: 'EM Lesson Guide · Minecraft',
+  title: 'Guia da aula EM · Minecraft',
 
   // Classroom header
-  headerTitle: 'Craftforge · Lesson',
+  headerTitle: 'Craftforge · Aula',
   online: '2 online',
-  guideChip: 'EM lesson guide',
+  guideChip: 'Guia da aula EM',
   leave: 'Leave',
 
   // Classroom toolbar (tooltips included)
@@ -34,46 +34,46 @@ CONTENT.ui = {
   // Video tiles
   student: 'Sofia',                 // the student's name (also used in the guide texts below)
   tutorInitial: 'T',                // letter in the tutor's avatar
-  tutorYou: 'Tutor (you)',
-  following: 'Following the teacher',
+  tutorYou: 'Tutor (você)',
+  following: 'Seguindo o tutor',
 
   // Lesson platform header shown inside Assignments
   platformLang: 'PT ˅',
   platformUser: 'Tutor',
 
   // Shared pieces of the lesson cards (in the lesson's language)
-  teacherNotes: 'Teacher notes',
+  teacherNotes: 'Notas para o tutor',
   submit: '✔ Enviar',
   choose: 'Escolher…',
   uploadFile: 'Anexar arquivo',
   videoSoon: 'Vídeo da aula',
 
   // Guide card (coach)
-  coachStep: (n, total) => `EM lesson guide · ${n}/${total}`,
-  next: 'Next →',
-  clickHint: '👆 Click the highlighted element',
-  openSections: (opened, total) => `Open every section (${opened}/${total})`,
-  scrollEndNotes: 'Scroll to the end of the notes',
-  scrollEndCard: 'Scroll to the end of the card'
+  coachStep: (n, total) => `Guia da aula EM · ${n}/${total}`,
+  next: 'Próximo →',
+  clickHint: '👆 Clique no elemento destacado',
+  openSections: (opened, total) => `Abra todas as seções (${opened}/${total})`,
+  scrollEndNotes: 'Role até o fim das notas',
+  scrollEndCard: 'Role até o fim do cartão'
 };
 
 /* =========================================================
    WELCOME PAGE
    ========================================================= */
 CONTENT.welcome = {
-  kicker: 'New Educational Model · Tutor training',
-  title: 'EM lesson <span>guide</span>',
-  lead: 'This guide shows you what a lesson of the <b>new educational model (EM)</b> looks like in Classroom. It uses the first cards of a real EM lesson of the Minecraft course — <b>Craftforge, Lesson 1: A primeira chama</b> — and a student, Sofia, who is already in the classroom.',
-  seeTitle: 'What you’ll see',
+  kicker: 'Novo Modelo Educacional · Treinamento para tutores',
+  title: 'Guia da aula <span>EM</span>',
+  lead: 'Este guia mostra como é uma aula do <b>novo modelo educacional (EM)</b> no Classroom. Ele usa os primeiros cartões de uma aula real do EM do curso de Minecraft — <b>Craftforge, Aula 1: A primeira chama</b> — e uma aluna, a Sofia, que já está na sala de aula.',
+  seeTitle: 'O que você vai ver',
   see: [
-    'How an <b>EM lesson</b> is organised: a series of cards, with all the guidance inside the lesson.',
-    'What the <b>tutor sees</b> and what <b>Sofia sees</b>: the <b>Teacher notes</b> live inside each card, and only the tutor can see them.',
-    'The <b>first Teacher notes</b>, the most detailed of the lesson: the story, the goal, your role, the time plan and, in the first lesson of a course, an explanatory video.',
-    'How to <b>Lead the group</b>, so that the students follow the card you open.'
+    'Como uma <b>aula do EM</b> é organizada: uma série de cartões, com toda a orientação dentro da própria aula.',
+    'O que o <b>tutor vê</b> e o que a <b>Sofia vê</b>: as <b>notas para o tutor</b> ficam dentro de cada cartão, e só o tutor consegue vê-las.',
+    'As <b>primeiras notas para o tutor</b>, as mais detalhadas da aula: a história, o objetivo, o seu papel, o plano de tempo e, na primeira aula de um curso, um vídeo explicativo.',
+    'Como usar o <b>Lead the group</b>, para que os alunos acompanhem o cartão que você abrir.'
   ],
-  howTitle: 'How to use it',
-  howText: 'This is a guide, not a practice simulation: there are no decisions to make and nothing to lose. Just follow the highlighted steps and click where the guide tells you to. You can replay it as many times as you want.',
-  start: 'START THE GUIDE →'
+  howTitle: 'Como usar',
+  howText: 'Este é um guia, não uma simulação de prática: não há decisões a tomar nem nada a perder. Basta seguir os passos destacados e clicar onde o guia indicar. Você pode repetir quantas vezes quiser.',
+  start: 'INICIAR O GUIA →'
 };
 
 /* =========================================================
@@ -305,61 +305,61 @@ CONTENT.activities = ({ M, C, tnotes, spoiler, media, banner, ul, ol, test, essa
    Translate title, text and btn. Keep target / accept / read / side / wide / next / last as they are.
    ========================================================= */
 CONTENT.guide = [
-  { title:'Welcome to the classroom', next:true,
-    text:'In the <b>New Educational Model (EM)</b>, everything you need to teach a lesson lives <b>inside the lesson itself</b>, in Classroom. There’s no wiki and no separate document: the guidance for each lesson travels with the lesson cards.<br><br>Let’s open them.' },
-  { title:'Open the lesson materials', target:'.tb-group', accept:['openTasks','toggleDropdown'],
-    text:'The lesson materials are in <b>Assignments</b>. Click <b>Assignments</b> — it turns blue when your mouse is over it.' },
-  { title:'Choose the first card', target:'#dd-0', accept:['pickActivity:0'],
-    text:'This is the list of <b>assignments</b> of the lesson, in order. This is the first lesson of the Minecraft course.<br><br>Click the first one.' },
-  { title:'Two views of the same card', next:true, wide:true,
-    text:'Before you go on, it’s important to understand <b>what you see</b> and <b>what Sofia sees</b>. You’re both on the same card, but not on the same screen:' +
+  { title:'Boas-vindas à sala de aula', next:true,
+    text:'No <b>Novo Modelo Educacional (EM)</b>, tudo o que você precisa para dar uma aula fica <b>dentro da própria aula</b>, no Classroom. Não há wiki nem documento separado: a orientação de cada aula acompanha os cartões da aula.<br><br>Vamos abri-los.' },
+  { title:'Abra os materiais da aula', target:'.tb-group', accept:['openTasks','toggleDropdown'],
+    text:'Os materiais da aula ficam em <b>Assignments</b>. Clique em <b>Assignments</b> — o botão fica azul quando o mouse passa por cima.' },
+  { title:'Escolha o primeiro cartão', target:'#dd-0', accept:['pickActivity:0'],
+    text:'Esta é a lista de <b>atividades</b> da aula, em ordem. Esta é a primeira aula do curso de Minecraft.<br><br>Clique na primeira.' },
+  { title:'Duas visões do mesmo cartão', next:true, wide:true,
+    text:'Antes de continuar, é importante entender <b>o que você vê</b> e <b>o que a Sofia vê</b>. Vocês dois estão no mesmo cartão, mas não na mesma tela:' +
       `<div class="views">
-        <div class="view"><div class="vh">👩‍🏫 What <b>you</b> see</div>
-          <div class="mock"><div class="m-tn">Teacher notes<small>only for you</small></div><div class="mk-c">Card content</div></div></div>
-        <div class="view"><div class="vh">👧 What <b>Sofia</b> sees</div>
-          <div class="mock"><div class="mk-c">Card content</div></div></div>
+        <div class="view"><div class="vh">👩‍🏫 O que <b>você</b> vê</div>
+          <div class="mock"><div class="m-tn">Notas para o tutor<small>só para você</small></div><div class="mk-c">Conteúdo do cartão</div></div></div>
+        <div class="view"><div class="vh">👧 O que a <b>Sofia</b> vê</div>
+          <div class="mock"><div class="mk-c">Conteúdo do cartão</div></div></div>
       </div>` +
-      '<ul class="c-list"><li>The box with the <b>orange dashed border</b> is the <b>Teacher notes</b>. They are written <b>inside the card</b>, together with the content.</li><li>Only the tutor sees them. Sofia <b>never</b> sees the Teacher notes — only the card content. Don’t read them out to her.</li><li>Every card has its own notes, so they are the first thing to check before and during each card.</li></ul>' },
-  { title:'The first Teacher notes', target:'#taskScroll', side:true, read:{ scope:'#tn-first' },
-    text:'The notes of the <b>first card</b> are the most detailed of the lesson: the overview and the story, the goal and key results, your <b>role</b>, the <b>time plan</b> of every card, <b>possible difficulties</b> and how to <b>close</b> the lesson.<br><br>In the first lesson of a course there’s usually an <b>explanatory video</b> too: watch it when you prepare.<br><br><b>Open every section</b> and <b>scroll to the end of the notes</b> to continue.' },
-  { title:'What Sofia sees', target:'#taskScroll', side:true, read:{},
-    text:'Below the notes is the card as <b>Sofia</b> will see it: the story and how to get ready for the lesson.<br><br>Scroll through the <b>whole card</b>. Next unlocks when you reach the end.' },
+      '<ul class="c-list"><li>A caixa com a <b>borda laranja tracejada</b> são as <b>notas para o tutor</b>. Elas estão escritas <b>dentro do cartão</b>, junto com o conteúdo.</li><li>Só o tutor as vê. A Sofia <b>nunca</b> vê as notas para o tutor — apenas o conteúdo do cartão. Não as leia em voz alta para ela.</li><li>Cada cartão tem as suas próprias notas, então elas são a primeira coisa a conferir antes e durante cada cartão.</li></ul>' },
+  { title:'As primeiras notas para o tutor', target:'#taskScroll', side:true, read:{ scope:'#tn-first' },
+    text:'As notas do <b>primeiro cartão</b> são as mais detalhadas da aula: a visão geral e a história, o objetivo e os resultados esperados, o seu <b>papel</b>, o <b>plano de tempo</b> de cada cartão, as <b>possíveis dificuldades</b> e como <b>encerrar</b> a aula.<br><br>Na primeira aula de um curso costuma haver também um <b>vídeo explicativo</b>: assista a ele quando se preparar.<br><br><b>Abra todas as seções</b> e <b>role até o fim das notas</b> para continuar.' },
+  { title:'O que a Sofia vê', target:'#taskScroll', side:true, read:{},
+    text:'Abaixo das notas está o cartão como a <b>Sofia</b> o verá: a história e como se preparar para a aula.<br><br>Role pelo <b>cartão inteiro</b>. O botão Próximo é liberado quando você chegar ao fim.' },
   { title:'Lead the group', target:'#leadToggle', accept:['toggleLead'],
-    text:'Now turn on <b>Lead the group</b>. Only you have this switch — students don’t.' +
+    text:'Agora ative o <b>Lead the group</b>. Só você tem este botão — os alunos não.' +
       `<div class="lead-demo">
-        <div><span class="ld-sw"></span><b>OFF</b> — you move to another card or scroll, and Sofia stays where she was. She may be looking at something else.</div>
-        <div><span class="ld-sw on"></span><b>ON</b> — every card you open and every scroll you make, Sofia sees at the same time.</div>
+        <div><span class="ld-sw"></span><b>OFF</b> — você passa para outro cartão ou rola a página, e a Sofia continua onde estava. Ela pode estar olhando outra coisa.</div>
+        <div><span class="ld-sw on"></span><b>ON</b> — cada cartão que você abre e cada rolagem que você faz, a Sofia vê ao mesmo tempo.</div>
       </div>` +
-      'Click the switch — it turns blue when it’s on.' },
-  { title:'Sofia is following you', target:'.vt.student', next:true,
-    text:'<b>Lead the group</b> is on ✅ Look at Sofia’s picture: it now says <b>Following the teacher</b>.<br><br>From now on:<ul class="c-list"><li>Sofia has the <b>same card</b> open as you, and sees the same scroll position — without the Teacher notes.</li><li>She can click <b>Work independently</b> to explore on her own. She then sees a banner saying where you are, with a <b>Return</b> button.</li></ul>' },
-  { title:'Next card', target:'#btnNext', accept:['nextTask'],
-    text:'The arrow pointing right takes you to the <b>next card</b>. Because Lead the group is on, Sofia moves with you. Click it.' },
-  { title:'Notes in every card', target:'#taskScroll', side:true, read:{},
-    text:'This card welcomes the group and has a short <b>question</b> that Sofia answers on her own copy. Besides the content for her, it has its own <b>Teacher notes</b> at the bottom: they’re shorter than the first ones.<br><br>They usually tell you the <b>time</b> of the card, its <b>objective</b>, <b>what to say</b> to the group, the <b>steps</b> and the <b>transition</b> to the next card.<br><br>Read the card to the end, including the Teacher notes.' },
-  { title:'Keep going', target:'#btnNext', accept:['nextTask'],
-    text:'Click <b>Next task</b> to go to the next card.' },
-  { title:'Phrases you can use', side:true, target:'#taskScroll', read:{}, last:true, btn:'Finish ✓',
-    text:'This card sets the group’s agreement. Look at its Teacher notes: besides the time and the objective, they give you a <b>phrase to say to the group</b> and the <b>next step</b>, so the lesson flows from card to card.<br><br>Scroll to the end of the card and read the Teacher notes.<br><br>That’s all you need to know about the EM lesson format!' }
+      'Clique no botão — ele fica azul quando está ativado.' },
+  { title:'A Sofia está seguindo você', target:'.vt.student', next:true,
+    text:'O <b>Lead the group</b> está ativado ✅ Olhe a imagem da Sofia: agora ela mostra <b>Seguindo o tutor</b>.<br><br>A partir de agora:<ul class="c-list"><li>A Sofia está com o <b>mesmo cartão</b> aberto que você e vê a mesma posição de rolagem — sem as notas para o tutor.</li><li>Ela pode clicar em <b>Work independently</b> para explorar por conta própria. Nesse caso, ela vê um banner indicando onde você está, com um botão <b>Return</b>.</li></ul>' },
+  { title:'Próximo cartão', target:'#btnNext', accept:['nextTask'],
+    text:'A seta para a direita leva você ao <b>próximo cartão</b>. Como o Lead the group está ativado, a Sofia vai junto com você. Clique nela.' },
+  { title:'Notas em todos os cartões', target:'#taskScroll', side:true, read:{},
+    text:'Este cartão dá as boas-vindas ao grupo e tem uma <b>pergunta</b> curta que a Sofia responde na própria cópia dela. Além do conteúdo para ela, ele traz as suas próprias <b>notas para o tutor</b> no final: elas são mais curtas que as primeiras.<br><br>Em geral, elas informam o <b>tempo</b> do cartão, o seu <b>objetivo</b>, <b>o que dizer</b> ao grupo, os <b>passos</b> e a <b>transição</b> para o próximo cartão.<br><br>Leia o cartão até o fim, incluindo as notas para o tutor.' },
+  { title:'Continue', target:'#btnNext', accept:['nextTask'],
+    text:'Clique em <b>Next task</b> para ir ao próximo cartão.' },
+  { title:'Frases que você pode usar', side:true, target:'#taskScroll', read:{}, last:true, btn:'Concluir ✓',
+    text:'Este cartão define o acordo do grupo. Veja as notas para o tutor dele: além do tempo e do objetivo, elas dão uma <b>frase para dizer ao grupo</b> e o <b>próximo passo</b>, para que a aula flua de um cartão para o outro.<br><br>Role até o fim do cartão e leia as notas para o tutor.<br><br>É tudo o que você precisa saber sobre o formato da aula do EM!' }
 ];
 
 /* =========================================================
    FINISH SCREEN (the completion code is added by the page)
    ========================================================= */
 CONTENT.finish = {
-  kicker: 'Guide complete',
-  title: '🎓 This is an EM lesson in Classroom',
-  intro: 'You’ve seen how the lessons of the new educational model look in Classroom and how to lead the group:',
+  kicker: 'Guia concluído',
+  title: '🎓 Esta é uma aula do EM no Classroom',
+  intro: 'Você viu como são as aulas do novo modelo educacional no Classroom e como liderar o grupo:',
   steps: [
-    'The lesson is a series of <b>cards</b> in <b>Assignments</b>: all the guidance lives inside the lesson.',
-    'The <b>Teacher notes</b> are inside each card and only <b>you</b> see them. Students never do.',
-    'The <b>first card</b> has the most detailed notes: the story, the goal, your role, the time plan, possible difficulties and the closing — and in a course’s first lesson, usually an explanatory video.',
-    'Each next card has shorter notes: time, objective, what to say, the steps and the transition.',
-    '<b>Lead the group</b> makes the students follow the card you open and the place where you scroll.'
+    'A aula é uma série de <b>cartões</b> em <b>Assignments</b>: toda a orientação fica dentro da própria aula.',
+    'As <b>notas para o tutor</b> ficam dentro de cada cartão e só <b>você</b> as vê. Os alunos nunca as veem.',
+    'O <b>primeiro cartão</b> tem as notas mais detalhadas: a história, o objetivo, o seu papel, o plano de tempo, as possíveis dificuldades e o encerramento — e, na primeira aula de um curso, em geral um vídeo explicativo.',
+    'Cada cartão seguinte tem notas mais curtas: tempo, objetivo, o que dizer, os passos e a transição.',
+    'O <b>Lead the group</b> faz os alunos acompanharem o cartão que você abre e o ponto até onde você rola.'
   ],
-  tip: '<b>Tip:</b> read the Teacher notes of the whole lesson <b>before</b> you teach it.',
-  codeLabel: '🔑 Your completion code',
-  codeHint: 'Copy it into the training to confirm that you completed the guide.',
-  back: '← Back to the training',
-  closeTab: 'Close this tab to go back to the training, then enter your completion code there.'
+  tip: '<b>Dica:</b> leia as notas para o tutor da aula inteira <b>antes</b> de dá-la.',
+  codeLabel: '🔑 Seu código de conclusão',
+  codeHint: 'Copie-o no treinamento para confirmar que você concluiu o guia.',
+  back: '← Voltar ao treinamento',
+  closeTab: 'Feche esta aba para voltar ao treinamento e digite lá o seu código de conclusão.'
 };
