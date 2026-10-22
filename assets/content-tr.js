@@ -768,7 +768,12 @@ CONTENT.zero = {
   "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
   "closing_h": "Neden değiştiğimizi, «hazır olmak» ne demek olduğunu ve kimlerin yanınızda olduğunu biliyorsunuz.",
   "closing_p": "Şimdi eğitime merakla dalın: simülatörlerde istediğiniz kadar pratik yapın ve öğrencilerimize yeni bir şey getiren ilk kişilerden biri olmanın keyfini çıkarın.",
-  "closing_dm": "Herhangi bir anda kendinize güvenmezseniz, mentorunuza bir DM yeterli."
+  "closing_dm": "Herhangi bir anda kendinize güvenmezseniz, mentorunuza bir DM yeterli.",
+  "why_cards": [
+    "Her ders bitmiş bir sonuçtan başlar",
+    "Hatalar sürecin bir parçasıdır",
+    "Yapay zekâ her yaşa uygun şekilde kullanılır"
+  ]
 };
 CONTENT.quiz.m0 = [
   {

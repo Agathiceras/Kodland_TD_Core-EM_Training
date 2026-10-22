@@ -768,7 +768,12 @@ CONTENT.zero = {
   "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
   "closing_h": "Ya sabes por qué estamos cambiando, qué significa «estar listo» y quién te acompaña.",
   "closing_p": "Ahora entra a la capacitación con curiosidad: practica en los simuladores las veces que quieras y disfruta de ser de los primeros en llevar algo nuevo a nuestros estudiantes.",
-  "closing_dm": "Si en algún momento no te sientes seguro, basta con un DM a tu mentor."
+  "closing_dm": "Si en algún momento no te sientes seguro, basta con un DM a tu mentor.",
+  "why_cards": [
+    "Cada clase parte de un resultado terminado",
+    "Los errores son parte del proceso",
+    "La IA se usa de forma adecuada a cada edad"
+  ]
 };
 CONTENT.quiz.m0 = [
   {

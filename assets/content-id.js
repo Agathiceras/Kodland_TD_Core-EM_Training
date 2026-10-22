@@ -768,7 +768,12 @@ CONTENT.zero = {
   "tutors": [ /* OPTIONAL tutor quotes: { text: "…", who: "Tutor name" } */ ],
   "closing_h": "Anda tahu mengapa kita berubah, apa arti «siap», dan siapa yang ada untuk Anda.",
   "closing_p": "Sekarang masuklah ke pelatihan dengan rasa ingin tahu: berlatihlah di simulator sesering yang Anda mau, dan nikmati menjadi salah satu yang pertama membawa sesuatu yang baru bagi siswa kita.",
-  "closing_dm": "Jika kapan pun Anda merasa kurang percaya diri, cukup kirim DM ke mentor Anda."
+  "closing_dm": "Jika kapan pun Anda merasa kurang percaya diri, cukup kirim DM ke mentor Anda.",
+  "why_cards": [
+    "Setiap pelajaran dimulai dari hasil jadi",
+    "Kesalahan adalah bagian dari proses",
+    "AI digunakan sesuai dengan setiap usia"
+  ]
 };
 CONTENT.quiz.m0 = [
   {
