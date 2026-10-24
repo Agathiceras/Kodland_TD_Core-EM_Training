@@ -15,6 +15,10 @@
     b.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#E5484D;color:#fff;font:600 14px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center';
     b.textContent = '⚠ assets/content-' + LANG + '.js could not be loaded (missing file or an error inside it). Showing English instead.'; document.body.appendChild(b); });
   window.LANG = 'en'; document.write('<script src="assets/content-en.js"><\/script>'); }</script>
+<!-- Module 0 (mindset), shared with the PL training: assets/module0-<lang>.js (falls back to English) + its builder -->
+<script>document.write('<script src="assets/module0-' + LANG + '.js"><\/script>');</script>
+<script>if (!window.M0_CONTENT) document.write('<script src="assets/module0-en.js"><\/script>');</script>
+<script src="assets/module0.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -626,43 +630,6 @@ input[type=range]{width:100%;accent-color:var(--pink)}
 .riskpart{background:var(--ink);color:#fff;border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
 .riskhint{background:#FEF2F2;border:2px solid #FECACA;color:#8A1C1C;border-radius:999px;padding:6px 14px;font-size:13.5px}
 
-
-/* ---------- Module 0 (mindset) ---------- */
-.zh{font-weight:800;font-size:18px;margin:30px 0 10px;color:var(--ink)}
-.zl{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;max-width:840px}
-.zl li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:11px 16px;line-height:1.6;font-size:15.5px;color:var(--ink2)}
-.zl li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-size:13px;font-weight:800;margin-top:1px}
-.zl.num{counter-reset:z}
-.zl.num li::before{counter-increment:z;content:counter(z)}
-.mentors{display:grid;gap:8px;max-width:840px;margin:6px 0 4px}
-.mentors .mh{display:grid;grid-template-columns:minmax(130px,.5fr) 1fr;gap:12px;padding:0 16px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.mentors .mr{display:grid;grid-template-columns:minmax(130px,.5fr) 1fr;gap:12px;align-items:center;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:13px 16px;line-height:1.5;color:var(--ink2)}
-.mentors .mreg{color:var(--lime-dd);font-weight:800}
-.tell{display:grid;gap:10px;max-width:900px;margin:6px 0 4px}
-.tell .th,.tell .tr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tell .th span{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0 4px}
-.tell .tr>div{border-radius:16px;padding:13px 16px;line-height:1.55;font-size:15px}
-.tell .t1{background:var(--surface);border:2px solid var(--line);color:var(--ink2)}
-.tell .t2{background:#F2FCE0;border:2px solid var(--line2);color:#2F4A00}
-.tell .tq,.tell .ta{font-weight:800;color:var(--lime-dd);margin-inline-end:6px}
-.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0 0 14px}
-.voice{margin:0;background:var(--surface);border:2px solid var(--line);border-radius:18px;padding:14px 16px}
-.voice img{max-width:100%;border-radius:10px;margin-bottom:10px}
-.voice blockquote{margin:0;line-height:1.6;font-size:15px;color:var(--ink2)}
-.voice figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
-@media (max-width:640px){.tell .th{display:none}.tell .tr,.mentors .mh,.mentors .mr{grid-template-columns:1fr}.mentors .mh{display:none}}
-
-/* ---------- Module 0: arrow badge between the two blocks ---------- */
-.tell .th,.tell .tr{grid-template-columns:1fr 52px 1fr;gap:0;align-items:stretch}
-.tell .tr>div{position:relative}
-.tell .tarr{align-self:center;justify-self:center;width:46px;height:46px;border-radius:50%;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-size:24px;font-weight:800;line-height:1;box-shadow:0 3px 10px rgba(0,0,0,.18);z-index:1}
-[dir="rtl"] .tell .tarr{transform:scaleX(-1)}
-.tell .t2{display:flex;gap:14px;align-items:center}
-.tell .ticon{flex:0 0 50px;height:50px;border-radius:16px;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-size:28px}
-.tell .t1 .tq{font-size:20px;margin-inline-end:4px}
-@media (max-width:640px){.tell .tr{grid-template-columns:1fr;gap:4px}.tell .tarr{transform:rotate(90deg);width:38px;height:38px;font-size:20px}[dir="rtl"] .tell .tarr{transform:rotate(90deg)}}
-.tell{max-width:none}
-.tell .th,.tell .tr{max-width:none}
 </style>
 </head>
 <body>
@@ -718,6 +685,17 @@ const CONFIG = {
     teaser:'https://drive.google.com/file/d/1uHQiiXq95Vh1eqhv4qqHwCIkdkXbfwha/preview',
     nexthw:'https://drive.google.com/file/d/1XreD1kLhAHZ7WQUH23q5I1tfHSc_kkMw/preview'
   },
+  // Videos that replace the ones above for one language only (?lang=xx). Keys not listed keep the default video.
+  VIDEOS_BY_LANG: {
+    tr: {
+      warmup:'https://drive.google.com/file/d/1l_8XvxjtHptOJZKDQcm8N7jtsKmodFso/preview',
+      link:'https://drive.google.com/file/d/1jp4spDM6-F9HwUsgZQ8d5kRHg9ORE2_3/preview',
+      goal:'https://drive.google.com/file/d/1OMk5x0fiWfwcJKhb2MOsyy5w_Hy9PZ9X/preview',
+      recap:'https://drive.google.com/file/d/1v_IasHeGyRnB6pKL1LRbpeYuPckSB5hJ/preview',
+      teaser:'https://drive.google.com/file/d/1oJ0KJJ7ebaaCmSmMromuVq2LaaTBc3Wu/preview',
+      nexthw:'https://drive.google.com/file/d/1ZVd_mghOXAzFRqPsexRZHQAgiVcxYSVw/preview'
+    }
+  },
   DEV_CODE: 'EMDEV'               // code for the Developer options (not case-sensitive)
 };
 const PKEY = 'kl-em-training-v2';
@@ -740,9 +718,22 @@ function setFlag(k, v){ P.flags = P.flags || {}; P.flags[k] = v; saveP(); }
    check = quiz | risk      needs: flags that must be set before the check opens
    ========================================================= */
 const MODULES = CONTENT.modules;
+// Module 0 (mindset) comes from assets/module0-<lang>.js + assets/module0.js, shared with the PL training
+// …and so does the final module (first-lesson mindset + reflection survey). Both surveys are saved in the Google Sheet.
+const M0MOD = window.M0 ? window.M0.build('em', LANG, {
+  flag, setFlag:k => setFlag(k, true), refresh:() => { const m = findMod(curId()); if (m) refreshCTA(m); } }) : null;
+const MF = M0MOD && M0MOD.final;
+if (M0MOD && !MODULES.some(x => x.id === 'm0')){
+  MODULES.unshift({ id:'m0', n:0, e:M0MOD.e, color:'#5ED4A6', title:M0MOD.title, check:'quiz', needs:[[M0MOD.surveyFlag, M0MOD.lockWhat]], desc:M0MOD.desc, obj:M0MOD.obj, offer:M0MOD.offer, sections:M0MOD.sections });
+  MODULES.push({ id:'mf', n:MODULES[MODULES.length - 1].n + 1, e:MF.e, color:'#F9A8D4', title:MF.title, check:'survey', needs:[[MF.surveyFlag, M0MOD.lockWhat]], desc:MF.desc, obj:MF.obj, offer:MF.offer, sections:MF.sections });
+  CONTENT.quiz.m0 = M0MOD.quiz;
+  CONTENT.sims.m0survey = CONTENT.sims.mfsurvey = M0MOD.lockWhat;   // label of the "needs" tracker
+  Object.assign(CONTENT.body, M0MOD.body);
+}
 const TOTAL = MODULES.length;
-const NUMBERED = MODULES.filter(x => x.n > 0).length;   // "Module n of NUMBERED" does not count Module 0
-const unlocked = m => { const i = MODULES.indexOf(m); return i <= 0 || passed(MODULES[i - 1].id); };
+const LASTN = MODULES[TOTAL - 1].n;   // "Module 2 of 4"
+// A module already passed stays open (progress saved before Module 0 existed)
+const unlocked = m => { const i = MODULES.indexOf(m); return i <= 0 || passed(MODULES[i - 1].id) || passed(m.id); };
 const coreDone = () => MODULES.every(m => passed(m.id));
 const findMod = id => MODULES.find(x => x.id === id);
 
@@ -763,13 +754,14 @@ const callout = (type, icon, html) => `<div class="callout ${type}"><span class=
 const flip = (n, e, t, back) => `<div class="flip" data-flip><div class="in"><div class="fc front">${n ? `<span class="fn2">${n}</span>` : ''}<span class="fe">${e}</span><b>${t}</b><small>${UI.tapFlip}</small></div><div class="fc back">${back}</div></div></div>`;
 // Button to a real-lesson example video (Module 3). It opens the video in a window inside the training.
 // Without a link it shows a 'coming soon' state.
-const videoBtn = (key, label) => CONFIG.VIDEOS[key]
+const VIDEOS = Object.assign({}, CONFIG.VIDEOS, CONFIG.VIDEOS_BY_LANG[LANG]);
+const videoBtn = (key, label) => VIDEOS[key]
   ? `<button class="vbtn" data-video="${key}" data-vtitle="${(label || '').replace(/"/g, '&quot;')}">▶ ${label || UI.watchExample}</button>`
   : `<button class="vbtn soon" data-vsoon>🎬 ${label || UI.watchExample} · <i>${UI.comingSoon}</i></button>`;
 function openVideo(key, title){
   const v = $('#vmodal');
   v.innerHTML = `<div class="vbox"><div class="vhead"><b>🎬 ${title}</b><button class="vx" data-vclose aria-label="${UI.close}">✕</button></div>
-    <div class="vframe"><iframe src="${CONFIG.VIDEOS[key]}" allow="autoplay; fullscreen" allowfullscreen title="${title}"></iframe></div></div>`;
+    <div class="vframe"><iframe src="${VIDEOS[key]}" allow="autoplay; fullscreen" allowfullscreen title="${title}"></iframe></div></div>`;
   v.classList.add('show');
 }
 function closeVideo(){ const v = $('#vmodal'); v.classList.remove('show'); v.innerHTML = ''; }
@@ -830,51 +822,6 @@ const LOOP = CONTENT.loop, AGES = CONTENT.ages, PROMPTS = CONTENT.prompts, QCMP 
 
 const BODY = CONTENT.body;   // section bodies: assets/content-xx.js
 
-/* =========================================================
-   MODULE 0 — "Start here" (mindset). Texts come from content: zero
-   ========================================================= */
-const ZERO = CONTENT.zero;
-const ZICONS = { prep:['🧩', '🛠️', '⭐', '🤖', '🎓', '🏁'], rows:['🗂️', '🔗', '🎚️', '🏆', '✅'] };
-const zSplit = s => { const m = String(s).match(/^<b>([\s\S]*?)<\/b>\s*([\s\S]*)$/); return m ? [m[1].replace(/\s*[:：]\s*$/, ''), m[2]] : ['', s]; };
-const zCards = (items, icons) => `<div class="trio">${items.map((t, i) => { const [h, p] = zSplit(t); return `<div class="ti"><span class="tie">${icons[i] || '✨'}</span><h3>${h}</h3><p>${p}</p></div>`; }).join('')}</div>`;
-const zWhy = z => { const ss = String(z.why).match(/[^.!?]+[.!?]+/g) || [];
-  if (!z.why_cards || ss.length < 4) return `<p class="p">${z.why}</p>`;
-  return `<div class="defn"><span class="de">🧒</span><p>${ss.slice(0, 2).join(' ').trim()}</p></div>
-  <div class="trio">${z.why_cards.map((t, i) => `<div class="ti"><span class="tie">${['🎯', '🌱', '🤖'][i]}</span><h3>${t}</h3></div>`).join('')}</div>
-  ${callout('tip', '🔄', ss.slice(3).join(' ').trim())}`; };
-const zUL = (items, cls) => `<ul class="zl ${cls || ''}">${items.map(i => `<li><span>${i}</span></li>`).join('')}</ul>`;
-const zVoices = (title, list) => list && list.length ? `<h3 class="zh">${title}</h3><div class="voices">${list.map(v => `<figure class="voice">${v.img ? `<img src="${v.img}" alt="">` : ''}<blockquote>${v.text || ''}</blockquote>${v.who ? `<figcaption>${v.who}</figcaption>` : ''}</figure>`).join('')}</div>` : '';
-const ZERO_BODY = {
-welcome:() => { const z = ZERO; return `
-  <div class="defn"><span class="de">👋</span><p>${z.welcome_lead}</p></div>
-  <h3 class="zh">${z.how_h}</h3><p class="p">${z.how_p}</p>
-  <h3 class="zh">${z.prep_h}</h3><p class="p">${z.prep_intro}</p>${z.prep.length % 3 === 0 ? zCards(z.prep, ZICONS.prep) : zUL(z.prep)}
-  ${callout('tip', '🎮', z.sim)}
-  <h3 class="zh">${z.why_h}</h3>${zWhy(z)}
-  ${callout('good', '🌟', z.means)}`; },
-ready:() => { const z = ZERO; return `
-  <p class="p">${z.ready_p1}</p>
-  <p class="p">${z.ready_p2}</p>${zUL(z.ready_items, 'num')}
-  ${callout('good', '🌱', z.ready_perm)}
-  ${callout('warn', '📍', z.ready_two)}`; },
-never:() => { const z = ZERO; return `
-  <p class="p">${z.never_p}</p>
-  <div class="mentors" role="table"><div class="mh"><span>${z.mentor_region}</span><span>${z.mentor_h}</span></div>${z.mentors.map(r => `<div class="mr"><span class="mreg">${r[0]}</span><b>${r[1]}</b></div>`).join('')}</div>
-  ${callout('tip', '🗓️', z.coaching)}
-  <h3 class="zh">${z.first_h}</h3>${zUL(z.first_items)}
-  <p class="p">${z.tl}</p>
-  ${callout('good', '💬', z.notconf)}`; },
-voices:() => { const z = ZERO; return `
-  <p class="p">${z.voices_p}</p>
-  <div class="tell"><div class="th"><span>${z.tell_you}</span><i></i><span>${z.tell_so}</span></div>${z.rows.map((r, i) => `<div class="tr"><div class="t1"><span class="tq">“</span>${r[0]}</div><span class="tarr" aria-hidden="true">→</span><div class="t2"><span class="ticon">${(ZICONS.rows || [])[i] || '✨'}</span><div>${r[1]}</div></div></div>`).join('')}</div>
-  ${callout('warn', '🌟', z.new_courses)}
-  ${zVoices(z.students_h, z.voices)}${zVoices(z.tutors_h, z.tutors)}`; },
-closing:() => { const z = ZERO; return `
-  <div class="defn"><span class="de">🚀</span><p><b>${z.closing_h}</b><br>${z.closing_p}</p></div>
-  ${callout('tip', '💬', z.closing_dm)}`; }
-};
-Object.assign(BODY, ZERO_BODY);
-
 
 /* =========================================================
    RENDERING
@@ -922,10 +869,13 @@ const ctaInfo = m => ({
 const needsMissing = m => (m.needs || []).filter(n => !flag(n[0]));
 function ctaHTML(m){
   const miss = needsMissing(m), ready = !miss.length;
+  // Final module: sending the reflection survey completes it
+  if (m.check === 'survey') return `<span class="e">${passed(m.id) ? '🏅' : '💬'}</span><div class="grow"><h3>${MF.ctaTitle}</h3><p>${MF.ctaText}</p></div>
+    <button class="btn-y" id="surveyDone" ${ready || passed(m.id) ? '' : 'disabled'}>${MF.ctaBtn}</button>`;
   const [h, p] = ctaInfo(m);
   const track = m.needs ? `<div class="simtrack">${m.needs.map(n => `<span class="${flag(n[0]) ? 'ok' : ''}">${flag(n[0]) ? '✓' : '○'} ${SIMS[n[0]]}</span>`).join('')}</div>` : '';
   return `<span class="e">${passed(m.id) ? '🏅' : '📝'}</span>
-    <div class="grow"><h3>${h}</h3><p>${p}</p>${track}${ready ? '' : `<div class="lockmsg">${tx(miss.length === 1 ? 'lockOne' : 'lockMany', { what:miss.length === 1 ? miss[0][1] : miss.slice(0, -1).map(n => n[1]).join(', ') + UI.listAnd + miss[miss.length - 1][1] })}</div>`}</div>
+    <div class="grow"><h3>${h}</h3><p>${p}</p>${track}${ready ? '' : m.id === 'm0' ? `<div class="lockmsg">🔒 ${M0MOD.lockMsg}</div>` : `<div class="lockmsg">${tx(miss.length === 1 ? 'lockOne' : 'lockMany', { what:miss.length === 1 ? miss[0][1] : miss.slice(0, -1).map(n => n[1]).join(', ') + UI.listAnd + miss[miss.length - 1][1] })}</div>`}</div>
     <button class="btn-y" id="startCheck" ${ready ? '' : 'disabled'}>${passed(m.id) ? UI.retake : UI.startCheck}</button>`;
 }
 const refreshCTA = m => { const c = $('#mcta'); if (c) c.innerHTML = ctaHTML(m); };
@@ -934,7 +884,7 @@ function renderModule(m){
   clearTimers();
   renderNav('module');
   view.innerHTML = `
-  <div class="mhead"><span class="eyebrow">${m.eyebrow || tx('eyebrow', { n:m.n, total:NUMBERED })}</span><h1>${m.e} ${m.title}</h1><div class="mobj">${m.obj}</div>
+  <div class="mhead"><span class="eyebrow">${tx('eyebrow', { n:m.n, total:LASTN })}</span><h1>${m.e} ${m.title}</h1><div class="mobj">${m.obj}</div>
     <div class="offer">${m.offer.map(o => `<div><span>${o[0]}</span>${o[1]}</div>`).join('')}</div></div>
   <div class="chips">${m.sections.map(s => `<button class="chip" data-jump="${s[0]}">${s[1]} ${s[2]}</button>`).join('')}</div>
   ${m.sections.map(s => `<section class="sec" id="sec-${s[0]}"><div class="sh"><span class="se">${s[1]}</span><h2>${s[2]}</h2></div>${BODY[s[0]]()}</section>`).join('')}
@@ -1203,7 +1153,7 @@ function tryCode(id){
   if (!validCode(id, inp.value)){ $('#err-' + id).textContent = UI.codeWrong; inp.focus(); return; }
   setFlag(id, true);
   $(`[data-codebox="${id}"]`).outerHTML = codeBox(id);
-  const m = findMod(curId()); if (m && m.check) refreshCTA(m);
+  const m = findMod(curId()); if (m && m.n) refreshCTA(m);
   confetti(80);
 }
 
@@ -1216,6 +1166,7 @@ document.addEventListener('click', e => {
   const cd = t.closest('[data-code]'); if (cd){ tryCode(cd.dataset.code); return; }
   const sc = t.closest('#startCheck');
   if (sc){ if (sc.disabled) return; const m = findMod(curId()); if (m) startCheck(m); return; }
+  if (t.closest('#surveyDone') && !t.closest('#surveyDone').disabled){ const m = findMod('mf'); setResult(m.id, 100, true); showResult(m, true, `<p>${MF.done}`); return; }
   const r = t.closest('[data-retake]'); if (r){ startCheck(findMod(r.dataset.retake)); return; }
   const vb = t.closest('[data-video]'); if (vb){ openVideo(vb.dataset.video, vb.dataset.vtitle || UI.videoDefault); return; }
   const zb = t.closest('[data-zoom]'); if (zb){ openZoom(zb.dataset.zoom, zb.dataset.ztitle || UI.zoomDefault); return; }
