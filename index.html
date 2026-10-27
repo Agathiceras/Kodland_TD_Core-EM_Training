@@ -70,7 +70,7 @@ main{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:34px 22p
 .hl{background:var(--pink);color:#fff;padding:0 16px;border-radius:999px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .lead{font-size:17px;line-height:1.65;color:var(--ink2);max-width:780px;margin-left:auto;margin-right:auto}
 .cores{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:30px}
-.core{position:relative;border-radius:26px;padding:26px;background:var(--surface);border:2px solid var(--line);overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:var(--sh);text-align:left}
+.core{position:relative;border-radius:26px;padding:26px;background:var(--surface);border:2px solid var(--line);overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:var(--sh);text-align:start}
 .core.open{cursor:pointer}
 .core.open:hover{transform:translateY(-4px);box-shadow:var(--shh)}
 .core .cn{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pink)}
@@ -79,7 +79,7 @@ main{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:34px 22p
 .core .big{position:absolute;right:-4px;top:-10px;font-size:110px;opacity:.14;pointer-events:none}
 .core.lockd{background:repeating-linear-gradient(135deg,#fff 0 18px,var(--soft) 18px 36px)}
 .mods{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:22px}
-.mcard{position:relative;border-radius:24px;padding:22px;background:var(--surface);border:2px solid var(--line);display:flex;flex-direction:column;gap:8px;min-height:250px;transition:transform .2s,box-shadow .2s;text-align:left;box-shadow:var(--sh)}
+.mcard{position:relative;border-radius:24px;padding:22px;background:var(--surface);border:2px solid var(--line);display:flex;flex-direction:column;gap:8px;min-height:250px;transition:transform .2s,box-shadow .2s;text-align:start;box-shadow:var(--sh)}
 .mcard:not(.locked):hover{transform:translateY(-4px);box-shadow:var(--shh)}
 .mcard .mn{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .mcard .me{font-size:54px;line-height:1}
@@ -177,7 +177,7 @@ section.sec{margin-top:50px;scroll-margin-top:80px}
 
 /* ---------- Myth / reveal cards ---------- */
 .myths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.myth{border-radius:22px;padding:20px;background:var(--surface);border:2px solid var(--line);text-align:left;display:flex;flex-direction:column;gap:10px;min-height:190px;transition:border-color .2s,background .3s;box-shadow:var(--sh)}
+.myth{border-radius:22px;padding:20px;background:var(--surface);border:2px solid var(--line);text-align:start;display:flex;flex-direction:column;gap:10px;min-height:190px;transition:border-color .2s,background .3s;box-shadow:var(--sh)}
 .myth .mtag{align-self:flex-start;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 10px;background:#FEE2E2;color:#B91C1C}
 .myth .mq{font-size:16.5px;font-weight:700;line-height:1.4}
 .myth .ma{display:none;color:var(--ink2);line-height:1.6;font-size:14.5px}
@@ -207,7 +207,7 @@ section.sec{margin-top:50px;scroll-margin-top:80px}
 
 /* ---------- Table ---------- */
 .ttable{width:100%;border-collapse:separate;border-spacing:0;font-size:14.5px;background:var(--surface);border:2px solid var(--line);border-radius:20px;overflow:hidden}
-.ttable th,.ttable td{padding:13px 15px;text-align:left;vertical-align:top;line-height:1.5;border-bottom:1px solid var(--hair)}
+.ttable th,.ttable td{padding:13px 15px;text-align:start;vertical-align:top;line-height:1.5;border-bottom:1px solid var(--hair)}
 .ttable tr:last-child td{border-bottom:0}
 .ttable th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--soft)}
 .ttable td:first-child{font-weight:700}
@@ -268,7 +268,7 @@ section.sec{margin-top:50px;scroll-margin-top:80px}
 .tn-mock{border-radius:20px;background:#2A2C3D;padding:18px;box-shadow:var(--shh)}
 .tn-mock .tn-box{border:1.5px dashed #F2A93B;border-radius:14px;background:#2E2A22;padding:14px 16px;color:#E8E2D6;font-size:13.5px;line-height:1.55}
 .tn-mock .tn-lbl{color:#F2A93B;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
-.tn-f{display:block;width:100%;text-align:left;border-radius:10px;padding:7px 9px;margin:4px 0;border:1.5px solid transparent;color:#E8E2D6;transition:all .2s;position:relative}
+.tn-f{display:block;width:100%;text-align:start;border-radius:10px;padding:7px 9px;margin:4px 0;border:1.5px solid transparent;color:#E8E2D6;transition:all .2s;position:relative}
 .tn-f:hover{border-color:rgba(242,169,59,.6);background:rgba(242,169,59,.08)}
 .tn-f.on{border-color:#F2A93B;background:rgba(242,169,59,.16)}
 .tn-f.seen::after{content:"✓";position:absolute;right:8px;top:7px;color:var(--lime);font-weight:900}
@@ -345,7 +345,7 @@ section.sec{margin-top:50px;scroll-margin-top:80px}
 .qalist{display:flex;flex-direction:column;gap:10px}
 .qa{border-radius:18px;background:var(--surface);border:2px solid var(--line);overflow:hidden}
 .qa.read{border-color:var(--lime-d)}
-.qa-q{width:100%;display:flex;gap:14px;align-items:center;text-align:left;padding:15px 18px;font-size:15.5px;font-weight:700;line-height:1.45}
+.qa-q{width:100%;display:flex;gap:14px;align-items:center;text-align:start;padding:15px 18px;font-size:15.5px;font-weight:700;line-height:1.45}
 .qa-q .qi{font-size:26px}
 .qa-q .qx{margin-left:auto;font-size:22px;color:var(--pink);transition:transform .2s}
 .qa.open .qx{transform:rotate(45deg)}
@@ -353,7 +353,7 @@ section.sec{margin-top:50px;scroll-margin-top:80px}
 .qa.open .qa-a{display:block;animation:fadeUp .3s}
 .qa-a p{margin:8px 0}.qa-a ul{margin:6px 0;padding-left:20px}
 .cklist{display:flex;flex-direction:column;gap:8px}
-.ck{display:flex;gap:12px;align-items:flex-start;text-align:left;border-radius:14px;padding:11px 14px;background:var(--soft);border:2px solid var(--hair);font-size:15px;line-height:1.5}
+.ck{display:flex;gap:12px;align-items:flex-start;text-align:start;border-radius:14px;padding:11px 14px;background:var(--soft);border:2px solid var(--hair);font-size:15px;line-height:1.5}
 .ckb{flex:0 0 22px;height:22px;border-radius:7px;border:2px solid var(--line2);display:grid;place-items:center;font-weight:900;color:var(--ink);margin-top:1px;background:#fff}
 .ck.on{border-color:var(--lime-d);background:#F4FFD6}
 .ck.on .ckb{background:var(--lime);border-color:var(--lime-d)}
@@ -370,7 +370,7 @@ section.sec{margin-top:50px;scroll-margin-top:80px}
 .srow.ok{border-color:var(--lime-d);background:#F4FFD6}
 .srow.ko{border-color:var(--red);background:#FEF2F2}
 .srow.ok .sfb,.srow.ko .sfb{display:block;animation:fadeUp .35s}
-.oq{display:flex;flex-direction:column;gap:6px;text-align:left;border-radius:16px;padding:14px 16px;background:var(--surface);border:2px solid var(--line);font-size:15px;line-height:1.5}
+.oq{display:flex;flex-direction:column;gap:6px;text-align:start;border-radius:16px;padding:14px 16px;background:var(--surface);border:2px solid var(--line);font-size:15px;line-height:1.5}
 .oq span{display:none;color:var(--ink2);font-size:14px}
 .oq::after{content:"Tap to open →";font-size:12px;color:var(--dim);font-weight:700}
 .oq.on{border-color:var(--lime-d);background:#F7FFE4}
@@ -443,6 +443,7 @@ input[type=range]{width:100%;accent-color:var(--pink)}
 .ba .bef{background:#F4F5F7;border-color:#DFE2E8;color:var(--ink2)}
 .ba .aft{background:#F4FFD6;border-color:var(--line2)}
 .ba .arr{display:grid;place-items:center;font-size:30px;border:0;padding:0}
+[dir=rtl] .ba .arr{transform:scaleX(-1)}   /* right-to-left: the arrow points from "before" (right) to "now" (left) */
 .ba h4{margin:0 0 6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .ba p{margin:0;line-height:1.6}
 .ltabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
@@ -484,7 +485,7 @@ input[type=range]{width:100%;accent-color:var(--pink)}
 .qmeta{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pink)}
 .qctx{background:var(--surface);border:2px solid var(--line);border-left:6px solid var(--pink);border-radius:16px;padding:14px 18px;margin:12px 0 0;line-height:1.6;color:var(--ink2)}
 .qq{font-size:25px;line-height:1.3;margin:12px 0 20px}
-.qopt{display:flex;gap:14px;align-items:center;width:100%;text-align:left;border-radius:18px;padding:15px 16px;margin:10px 0;background:var(--surface);border:2px solid var(--line);font-size:15.5px;line-height:1.5;transition:border-color .15s,background .15s}
+.qopt{display:flex;gap:14px;align-items:center;width:100%;text-align:start;border-radius:18px;padding:15px 16px;margin:10px 0;background:var(--surface);border:2px solid var(--line);font-size:15.5px;line-height:1.5;transition:border-color .15s,background .15s}
 .qopt:hover{border-color:var(--lime-d);background:#F7FFE4}
 .qopt .k{flex:0 0 34px;height:34px;border-radius:12px;background:var(--bg2);display:grid;place-items:center;font-weight:900;font-family:Nunito,sans-serif;font-size:14px}
 .answered .qopt{pointer-events:none}
@@ -526,7 +527,7 @@ input[type=range]{width:100%;accent-color:var(--pink)}
 .ph-replies{background:#fff;max-height:48%;overflow-y:auto;padding:0 10px}
 .ph-replies:not(:empty){padding:10px;border-top:1px solid #eee}
 .ph-pick{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pink);margin:0 2px 6px}
-.ph-opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;border-radius:14px;padding:10px 12px;margin:6px 0;background:var(--soft);border:1.5px solid var(--line);font-size:13.5px;line-height:1.45;animation:fadeUp .3s both}
+.ph-opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:start;border-radius:14px;padding:10px 12px;margin:6px 0;background:var(--soft);border:1.5px solid var(--line);font-size:13.5px;line-height:1.45;animation:fadeUp .3s both}
 .ph-opt:hover{border-color:var(--pink)}
 .ph-opt .k{flex:0 0 24px;height:24px;border-radius:7px;background:var(--lime);display:grid;place-items:center;font-weight:900;font-size:11.5px;font-family:Nunito,sans-serif}
 .ph-input{display:flex;align-items:center;gap:8px;padding:10px 12px 16px;background:#fff;border-radius:0 0 34px 34px}
@@ -549,7 +550,7 @@ input[type=range]{width:100%;accent-color:var(--pink)}
 .result .pct.pass{color:var(--green)}.result .pct.fail{color:var(--red)}
 .result p{color:var(--ink2);line-height:1.6}
 .result .btn-row{justify-content:center;margin-top:20px}
-.nexts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0;text-align:left}
+.nexts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0;text-align:start}
 .nexts div{display:flex;gap:12px;align-items:flex-start;border-radius:16px;padding:12px 14px;background:var(--soft);border:2px solid var(--hair)}
 .nexts span{font-size:26px}.nexts p{margin:0;font-size:14.5px}
 .ovl{position:fixed;inset:0;z-index:200;background:rgba(17,17,17,.55);display:none;align-items:center;justify-content:center;padding:18px;backdrop-filter:blur(3px)}
@@ -573,7 +574,7 @@ input[type=range]{width:100%;accent-color:var(--pink)}
   .cmods{grid-template-columns:repeat(5,1fr)}
   .loop-row{flex-wrap:wrap}.loop-row::before,.loop-row .lf{display:none}.lst{flex:0 0 30%}
   .bar-row{grid-template-columns:1fr}
-  .ba{grid-template-columns:1fr}.ba .arr{transform:rotate(90deg)}
+  .ba{grid-template-columns:1fr}.ba .arr{transform:rotate(90deg)}[dir=rtl] .ba .arr{transform:rotate(90deg)}
   .ladder3{grid-template-columns:1fr}.ladder3 div{margin-top:0!important}
   .chatwrap{grid-template-columns:1fr}.phone{max-width:380px;width:100%;margin:0 auto}.chat-side{position:static}
   .hero h1{font-size:36px}.mhead h1{font-size:30px}
@@ -704,40 +705,10 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const norm = s => String(s || '').trim().toUpperCase().replace(/\s+/g, '');
 
-/* ---------- Safe storage ----------
-   Inside the LMS iframe the browser treats this site's storage as third-party:
-   Safari and strict privacy settings can block or wipe it. Every value is kept
-   in memory + localStorage + sessionStorage and reads never throw, so the
-   training keeps its progress for the whole visit even when storage is blocked. */
-const STORE = (function(){
-  const mem = {};
-  function areas(){ const a = []; try { a.push(window.localStorage); } catch(e){} try { a.push(window.sessionStorage); } catch(e){} return a; }
-  return {
-    get(k){ for (const st of areas()){ try { const v = st.getItem(k); if (v !== null) return v; } catch(e){} } return Object.prototype.hasOwnProperty.call(mem, k) ? mem[k] : null; },
-    getAll(k){ const out = []; for (const st of areas()){ try { const v = st.getItem(k); if (v !== null) out.push(v); } catch(e){} } if (Object.prototype.hasOwnProperty.call(mem, k)) out.push(mem[k]); return out; },
-    set(k, v){ v = String(v); mem[k] = v; for (const st of areas()){ try { st.setItem(k, v); } catch(e){} } },
-    remove(k){ delete mem[k]; for (const st of areas()){ try { st.removeItem(k); } catch(e){} } }
-  };
-})();
-/* ---------- Progress (memory + localStorage + sessionStorage) ---------- */
-// Progress only moves forward: a module passed anywhere stays passed, best score wins, flags stay on.
-function mergeP(a, b){
-  a = a || {}; b = b || {};
-  const out = Object.assign({}, b, a);
-  Object.keys(b).forEach(k => {
-    const x = a[k], y = b[k];
-    if (k === 'flags' && y && typeof y === 'object'){
-      out.flags = Object.assign({}, x || {}); Object.keys(y).forEach(f => { if (y[f] && !out.flags[f]) out.flags[f] = y[f]; });
-    } else if (y && typeof y === 'object' && ('passed' in y || 'score' in y)){
-      const xo = (x && typeof x === 'object') ? x : {};
-      out[k] = Object.assign({}, y, xo, { passed: !!(xo.passed || y.passed), score: Math.max(Number(xo.score) || 0, Number(y.score) || 0) });
-    }
-  });
-  return out;
-}
+/* ---------- Progress (localStorage) ---------- */
 let P = {};
-function loadP(){ P = {}; STORE.getAll(PKEY).forEach(raw => { try { P = mergeP(P, JSON.parse(raw || '{}') || {}); } catch(e){} }); }
-function saveP(){ STORE.set(PKEY, JSON.stringify(P)); lmsSync(); }
+function loadP(){ try { P = JSON.parse(localStorage.getItem(PKEY) || '{}') || {}; } catch(e){ P = {}; } }
+function saveP(){ try { localStorage.setItem(PKEY, JSON.stringify(P)); } catch(e){} }
 const passed = id => !!(P[id] && P[id].passed);
 function setResult(id, pct, ok){ const o = P[id] || {}; P[id] = Object.assign(o, { passed: ok || !!o.passed, score: Math.max(pct, o.score || 0) }); saveP(); }
 const flag = k => !!(P.flags && P.flags[k]);
@@ -765,38 +736,6 @@ const LASTN = MODULES[TOTAL - 1].n;   // "Module 2 of 4"
 // A module already passed stays open (progress saved before Module 0 existed)
 const unlocked = m => { const i = MODULES.indexOf(m); return i <= 0 || passed(MODULES[i - 1].id) || passed(m.id); };
 const coreDone = () => MODULES.every(m => passed(m.id));
-
-/* ---------- LMS bridge ----------
-   Talks to the LMS (parent frame) via postMessage. Outside an iframe it does nothing.
-   Training -> LMS: {source:'kodland-training', training, lang, event:'ready'|'progress'|'completed', progress, done, total, score}
-   The LMS unlocks the test (DST) when it receives 'completed' ("Material first, then the test" on).
-   LMS -> Training (optional): {source:'kodland-lms', event:'progress', progress:{...}} restores saved progress. */
-const TRAINING_ID = 'em-core';
-const IN_LMS = (function(){ try { return window.parent !== window; } catch(e){ return true; } })();
-let lmsReady = false, completedSent = false;
-function lmsSummary(){
-  const list = MODULES, done = list.filter(m => P[m.id] && P[m.id].passed).length;
-  const score = Math.round(list.map(m => (P[m.id] && Number(P[m.id].score)) || 0).reduce((a, b) => a + b, 0) / (list.length || 1));
-  return { progress:P, done, total:list.length, score };
-}
-function lmsSend(event){
-  try { if (!IN_LMS || !lmsReady || P.dev) return;
-    window.parent.postMessage(Object.assign({ source:'kodland-training', training:TRAINING_ID, lang:LANG, event }, lmsSummary()), '*'); } catch(e){}
-}
-// 'completed' is sent once per page load, as soon as every module is passed (also on load, if it was already done).
-function lmsSync(){ if (!lmsReady) return; lmsSend('progress'); if (!completedSent && !P.dev && coreDone()){ completedSent = true; lmsSend('completed'); } }
-addEventListener('message', e => {
-  try { if (!IN_LMS || e.source !== window.parent) return;
-    const d = e.data; if (!d || d.source !== 'kodland-lms' || d.event !== 'progress' || !d.progress || typeof d.progress !== 'object') return;
-    P = mergeP(P, d.progress); STORE.set(PKEY, JSON.stringify(P)); lmsSync(); } catch(err){}
-});
-// Progress carried in the URL (?p=...) by a language switch: merge it, then clean the URL.
-function takeUrlProgress(){
-  try { const q = new URLSearchParams(location.search), raw = q.get('p'); if (!raw) return;
-    try { P = mergeP(P, JSON.parse(raw)); STORE.set(PKEY, JSON.stringify(P)); } catch(e){}
-    q.delete('p'); history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q.toString() : '') + location.hash); } catch(e){}
-}
-function progressParam(){ return 'p=' + encodeURIComponent(JSON.stringify(P)); }
 const findMod = id => MODULES.find(x => x.id === id);
 
 /* =========================================================
@@ -937,7 +876,7 @@ function ctaHTML(m){
   const [h, p] = ctaInfo(m);
   const track = m.needs ? `<div class="simtrack">${m.needs.map(n => `<span class="${flag(n[0]) ? 'ok' : ''}">${flag(n[0]) ? '✓' : '○'} ${SIMS[n[0]]}</span>`).join('')}</div>` : '';
   return `<span class="e">${passed(m.id) ? '🏅' : '📝'}</span>
-    <div class="grow"><h3>${h}</h3><p>${p}</p>${track}${ready ? '' : m.id === 'm0' ? `<div class="lockmsg">🔒 ${M0MOD.lockMsg}</div>` : `<div class="lockmsg">${tx(miss.length === 1 ? 'lockOne' : 'lockMany', { what:miss.length === 1 ? miss[0][1] : miss.slice(0, -1).map(n => n[1]).join(', ') + UI.listAnd + miss[miss.length - 1][1] })}</div>`}</div>
+    <div class="grow"><h3>${h}</h3><p>${p}</p>${track}${ready ? '' : m.id === 'm0' ? `<div class="lockmsg">🔒 ${M0MOD.lockMsg}</div>` : `<div class="lockmsg">${tx(miss.length === 1 ? 'lockOne' : 'lockMany', { what:miss.length === 1 ? miss[0][1] : miss.slice(0, -1).map(n => n[1]).join(UI.listSep || ', ') + UI.listAnd + miss[miss.length - 1][1] })}</div>`}</div>
     <button class="btn-y" id="startCheck" ${ready ? '' : 'disabled'}>${passed(m.id) ? UI.retake : UI.startCheck}</button>`;
 }
 const refreshCTA = m => { const c = $('#mcta'); if (c) c.innerHTML = ctaHTML(m); };
@@ -1155,7 +1094,7 @@ function renderDone(){
   view.innerHTML = `<div class="result" style="max-width:800px">
     <div class="re">🏆</div><h1>${UI.doneTitle}</h1>
     ${UI.doneText}
-    <div class="mods" style="grid-template-columns:repeat(2,1fr);text-align:left">${MODULES.map(m => `<div class="mcard done" style="min-height:0"><span class="me">${m.e}</span><h3>${m.title}</h3><span class="badge">${UI.doneBadge}</span></div>`).join('')}</div>
+    <div class="mods" style="grid-template-columns:repeat(2,1fr);text-align:start">${MODULES.map(m => `<div class="mcard done" style="min-height:0"><span class="me">${m.e}</span><h3>${m.title}</h3><span class="badge">${UI.doneBadge}</span></div>`).join('')}</div>
     <div class="nexts">${UI.doneNexts.map(x => `<div><span>${x[0]}</span><p>${x[1]}</p></div>`).join('')}</div>
     <div class="btn-row" style="justify-content:center"><button class="btn-y" data-go="">${UI.doneBack}</button></div></div>`;
   confetti(240);
@@ -1296,8 +1235,6 @@ document.addEventListener('keydown', e => {
 });
 
 loadP();
-takeUrlProgress();
-lmsReady = true; lmsSend('ready'); lmsSync();
 devBadge();
 route();
 
