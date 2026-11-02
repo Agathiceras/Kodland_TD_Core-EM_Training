@@ -20,6 +20,10 @@ window.M0 = (function(){
   // Region preselected from the training language (the tutor can change it). en and ar are used by several regions: no default.
   const REGION_BY_LANG = { es:'latam', pt:'brazil', it:'italy', pl:'poland', ru:'cis', tr:'mena', id:'indonesia' };
   const IDKEY = 'kl-m0-identity';
+  // Regional link of an English training: uk.html / usa.html open index.html?lang=en&region=uk|usa.
+  // The region of the link is preselected in both surveys, only that region's mentors are shown,
+  // and it is sent with every answer as link_region (empty when the training was opened without it).
+  const LINK_REGION = (function(){ try { const r = (new URLSearchParams(location.search).get('region') || '').toLowerCase(); return /^[a-z]+$/.test(r) ? r : ''; } catch(e){ return ''; } })();
 
   /* ---------- styles (they adapt to each training through its CSS variables) ---------- */
   const css = `
@@ -151,7 +155,7 @@ window.M0 = (function(){
   /* ---------- a survey form ---------- */
   function surveyHTML(key, def, flagName, gif){
     const SV = X.survey, id = store.get(IDKEY) || {}, track = CTX.track;
-    const region = id.region || REGION_BY_LANG[CTX.lang] || '';
+    const region = LINK_REGION || id.region || REGION_BY_LANG[CTX.lang] || '';
     const head = `<div class="m0-svhead">${gif ? `<img src="${gif}" alt="${def.gifAlt || ''}">` : ''}<div><h3>${def.title}</h3><p>${def.intro}</p></div></div>`;
     // Sent once = done: the survey isn’t shown again (retaking the check doesn’t ask for it again)
     if (CTX.opts.flag(flagName)) return `<div class="m0-sv sent">${head}<div class="m0-svdone">${SV.thanks}</div></div>`;
@@ -188,7 +192,7 @@ window.M0 = (function(){
       const on = s.querySelector('.m0-opt.on'); s.classList.toggle('miss', !on); if (on) answers[s.dataset.q] = on.dataset.v; else missing = true; });
     if (missing){ msg.className = 'm0-svmsg err'; msg.textContent = SV.missing; return; }
     store.set(IDKEY, { email, region });
-    const payload = Object.assign({ survey:box.dataset.sv, training:CTX.track.toUpperCase(), lang:CTX.lang, email, region, sent_at:new Date().toISOString() }, answers);
+    const payload = Object.assign({ survey:box.dataset.sv, training:CTX.track.toUpperCase(), lang:CTX.lang, email, region, link_region:LINK_REGION, sent_at:new Date().toISOString() }, answers);
     store.set('kl-m0-last-' + CTX.track + '-' + box.dataset.sv, payload);   // a copy in the browser, just in case
     btn.disabled = true; msg.textContent = SV.sending;
     const finish = () => {
@@ -230,7 +234,8 @@ window.M0 = (function(){
     CTX = { track, lang, opts };
     const M = X.module, W = X.welcome, R = X.ready, A = X.alone, V = X.voice, S = X.start, F = X.final;
     const prep = pick(W.prep, track);
-    const mentors = A.mentors[lang] || A.mentors.en;
+    let mentors = A.mentors[lang] || A.mentors.en;
+    if (LINK_REGION){ const own = mentors.filter(r => String(r[0]).toLowerCase() === LINK_REGION); if (own.length) mentors = own; }
     const body = {
       m0welcome: () => `
         <p class="p">${W.intro}</p>
